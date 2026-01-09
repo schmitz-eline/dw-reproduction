@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Eline Schmitz">
+    <meta name="keywords" content="design web, reproduction">
+    <meta name="description"
+          content="Voici ma version du site de l’Atelier de Géraldine. C’est un projet de reproduction réalisé en cours de design web à la HEPL (Haute École de la Province de Liège), en techniques infographiques, option web, deuxième année.">
+    <title>Projet de reproduction - Cours de DW</title>
+</head>
+<body id="top">
+<header>
+    <a href="#top" title="Accueil" class="header-logo">
+        <img src="assets/svg/logo-eline.svg" alt="Logo du site - Eline et sa trompette">
+    </a>
+
+    <!--  todo: mettre des liens internes pour les instruments / accessoires -> ils iront vers les cartes produits, et ces dans ces cartes qu'on mettra les liens externes  -->
+
+    <!--  menu desktop  -->
+    <nav class="desktop-nav" aria-label="Desktop">
+        <ul class="nav-links">
+            <li class="has-submenu">
+                <button type="button"
+                        class="submenu-toggle"
+                        aria-expanded="false"
+                        aria-controls="desktop-submenu-instruments">
+                    Instruments
+                </button>
+                <ul class="submenu" id="desktop-submenu-instruments">
+                    <li><a href="https://fr.wikipedia.org/wiki/Trompette" target="_blank" rel="noopener noreferrer"
+                           title="Découvrir la trompette">La trompette</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Bugle" target="_blank" rel="noopener noreferrer"
+                           title="Découvrir le bugle">Le bugle</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Trompette_piccolo" target="_blank"
+                           rel="noopener noreferrer" title="Découvrir la trompette piccolo">La trompette <i lang="it">piccolo</i></a>
+                    </li>
+                    <li><a href="https://www.britannica.com/art/cornet" hreflang="en" target="_blank"
+                           rel="noopener noreferrer" title="Découvrir le cornet">Le cornet</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <button type="button"
+                        class="submenu-toggle"
+                        aria-expanded="false"
+                        aria-controls="desktop-submenu-accessoires">
+                    Accessoires
+                </button>
+                <ul class="submenu" id="desktop-submenu-accessoires">
+                    <li>
+                        <a href="https://resources.tonebase.co/trumpet/trumpet-posts/what-is-a-straight-mute-on-the-trumpet"
+                           hreflang="en" target="_blank" rel="noopener noreferrer" title="Découvrir la straight mute">La
+                            <i lang="en">straight mute</i></a></li>
+                    <li><a href="https://resources.tonebase.co/trumpet/trumpet-posts/what-is-a-cup-mute-on-the-trumpet"
+                           hreflang="en" target="_blank" rel="noopener noreferrer" title="Découvrir la cup mute">La <i
+                            lang="en">cup mute</i></a></li>
+                    <li><a href="https://tomcrownmutes.com/iv-wah-wah/" hreflang="en" target="_blank"
+                           rel="noopener noreferrer" title="Découvrir la wah-wah">La wah-wah</a></li>
+                    <li><a href="https://www.schoolmusiconline.com/trumpet-practice-mute" hreflang="en" target="_blank"
+                           rel="noopener noreferrer" title="Découvrir la practice mute">La <i lang="en">practice
+                        mute</i></a></li>
+                    <li>
+                        <a href="https://kgumusic.com/blogs/news/trumpet-maintenance-keeping-your-instrument-in-top-shape"
+                           hreflang="en" target="_blank" rel="noopener noreferrer"
+                           title="En savoir plus sur le kit d’entretien">Le kit d’entretien</a></li>
+                    <li>
+                        <a href="https://www.coursdetrompette.fr/huiles-et-graisses-pour-trompette-comparatif-2025-des-meilleurs-produits-dentretien"
+                           target="_blank" rel="noopener noreferrer" title="En savoir plus sur l’huile et la graisse">L’huile
+                            & la graisse</a></li>
+                    <li><a href="https://musiccritic.com/equipment/best-trumpet-cases/" hreflang="en" target="_blank"
+                           rel="noopener noreferrer" title="En savoir plus sur la housse">La housse</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <button type="button"
+                        class="submenu-toggle"
+                        aria-expanded="false"
+                        aria-controls="desktop-submenu-contact">
+                    Contacter Eline
+                </button>
+                <ul class="submenu" id="desktop-submenu-contact">
+                    <li><a href="mailto:eline.schmitz@student.hepl.be" title="Envoyer un email à Eline">Email</a></li>
+                    <li><a href="https://github.com/schmitz-eline" target="_blank" rel="noopener noreferrer"
+                           title="Consulter le profil d’Eline sur GitHub">GitHub</a></li>
+                    <li><a href="https://instagram.com/eline.stz" target="_blank" rel="noopener noreferrer"
+                           title="Consulter le compte Instagram d’Eline">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/eline.stz" target="_blank" rel="noopener noreferrer"
+                           title="Consulter le compte Facebook d’Eline">Facebook</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!--  menu mobile / tablette  -->
+    <button type="button" class="burger" aria-label="Ouvrir le menu">
+        <img src="assets/svg/burger.svg" alt="Icône du burger menu">
+    </button>
+    <div class="mobile-menu" role="navigation" aria-label="Mobile ou tablette">
+        <button type="button" class="close-menu" aria-label="Fermer le menu">
+            <img src="assets/svg/arrow-left.svg" alt="Icône pour fermer le menu">
+        </button>
+        <img src="assets/svg/logo.svg" alt="Logo secondaire - Eline et sa trompette, Seraing">
+        <a href="#top" title="Retourner à l’accueil" class="mobile-menu__home-link">Accueil</a>
+        <ul class="mobile-menu__nav">
+            <li class="has-submenu">
+                <button type="button"
+                        class="submenu-toggle"
+                        aria-expanded="false"
+                        aria-controls="mobile-submenu-instruments">
+                    Instruments
+                </button>
+                <ul class="submenu" id="mobile-submenu-instruments">
+                    <li><a href="https://fr.wikipedia.org/wiki/Trompette" target="_blank" rel="noopener noreferrer"
+                           title="Découvrir la trompette">La trompette</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Bugle" target="_blank" rel="noopener noreferrer"
+                           title="Découvrir le bugle">Le bugle</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Trompette_piccolo" target="_blank"
+                           rel="noopener noreferrer" title="Découvrir la trompette piccolo">La trompette <i lang="it">piccolo</i></a>
+                    </li>
+                    <li><a href="https://www.britannica.com/art/cornet" hreflang="en" target="_blank"
+                           rel="noopener noreferrer" title="Découvrir le cornet">Le cornet</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <button type="button"
+                        class="submenu-toggle"
+                        aria-expanded="false"
+                        aria-controls="mobile-submenu-accessoires">
+                    Accessoires
+                </button>
+                <ul class="submenu" id="mobile-submenu-accessoires">
+                    <li>
+                        <a href="https://resources.tonebase.co/trumpet/trumpet-posts/what-is-a-straight-mute-on-the-trumpet"
+                           hreflang="en" target="_blank" rel="noopener noreferrer" title="Découvrir la straight mute">La
+                            <i lang="en">straight mute</i></a></li>
+                    <li><a href="https://resources.tonebase.co/trumpet/trumpet-posts/what-is-a-cup-mute-on-the-trumpet"
+                           hreflang="en" target="_blank" rel="noopener noreferrer" title="Découvrir la cup mute">La <i
+                            lang="en">cup mute</i></a></li>
+                    <li><a href="https://tomcrownmutes.com/iv-wah-wah/" hreflang="en" target="_blank"
+                           rel="noopener noreferrer" title="Découvrir la wah-wah">La wah-wah</a></li>
+                    <li><a href="https://www.schoolmusiconline.com/trumpet-practice-mute" hreflang="en" target="_blank"
+                           rel="noopener noreferrer" title="Découvrir la practice mute">La <i lang="en">practice
+                        mute</i></a></li>
+                    <li>
+                        <a href="https://kgumusic.com/blogs/news/trumpet-maintenance-keeping-your-instrument-in-top-shape"
+                           hreflang="en" target="_blank" rel="noopener noreferrer"
+                           title="En savoir plus sur le kit d’entretien">Le kit d’entretien</a></li>
+                    <li>
+                        <a href="https://www.coursdetrompette.fr/huiles-et-graisses-pour-trompette-comparatif-2025-des-meilleurs-produits-dentretien"
+                           target="_blank" rel="noopener noreferrer" title="En savoir plus sur l'huile et la graisse">L’huile
+                            & la graisse</a></li>
+                    <li><a href="https://musiccritic.com/equipment/best-trumpet-cases/" hreflang="en" target="_blank"
+                           rel="noopener noreferrer" title="En savoir plus sur la housse">La housse</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <button type="button"
+                        class="submenu-toggle"
+                        aria-expanded="false"
+                        aria-controls="mobile-submenu-contact">
+                    Contacter Eline
+                </button>
+                <ul class="submenu" id="mobile-submenu-contact">
+                    <li><a href="mailto:eline.schmitz@student.hepl.be" title="Envoyer un email à Eline">Email</a></li>
+                    <li><a href="https://github.com/schmitz-eline" target="_blank" rel="noopener noreferrer"
+                           title="Consulter le profil d’Eline sur GitHub">GitHub</a></li>
+                    <li><a href="https://instagram.com/eline.stz" target="_blank" rel="noopener noreferrer"
+                           title="Consulter le compte Instagram d’Eline">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/eline.stz" target="_blank" rel="noopener noreferrer"
+                           title="Consulter le compte Facebook d’Eline">Facebook</a></li>
+                </ul>
+            </li>
+        </ul>
+        <img src="assets/svg/tampon.svg" alt="Tampon - Présenté à Seraing, en Belgique">
+    </div>
+
+    <a href="https://atelierdegeraldine.fr/" target="_blank" rel="noopener noreferrer"
+       title="Consulter le site de référence - L’Atelier de Géraldine">
+        <img src="assets/svg/icone-lien-site.svg" alt="Icône du lien vers le site de référence">
+    </a>
+</header>
+</body>
+</html>
