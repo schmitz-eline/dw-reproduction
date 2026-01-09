@@ -1,0 +1,160 @@
+/* FONTS */
+
+/* Bricolage Grotesque */
+@font-face {
+    font-family: "BricolageGrotesque";
+    src: url("../assets/fonts/bricolage-grotesque/bricolage-grotesque-extralight-300.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "BricolageGrotesque";
+    src: url("../assets/fonts/bricolage-grotesque/bricolage-grotesque-regular-400.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "BricolageGrotesque";
+    src: url("../assets/fonts/bricolage-grotesque/bricolage-grotesque-medium-500.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "BricolageGrotesque";
+    src: url("../assets/fonts/bricolage-grotesque/bricolage-grotesque-bold-700.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "BricolageGrotesque";
+    src: url("../assets/fonts/bricolage-grotesque/bricolage-grotesque-extrabold-800.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Captain Nelson Script */
+@font-face {
+    font-family: "CaptainNelsonScript";
+    src: url("../assets/fonts/captain-nelson-script/captain-nelson-script-regular-400.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* FK Screamer */
+@font-face {
+    font-family: "FKScreamer";
+    src: url("../assets/fonts/fk-screamer/fk-screamer-regular-400.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FKScreamer";
+    src: url("../assets/fonts/fk-screamer/fk-screamer-bold-700.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FKScreamer";
+    src: url("../assets/fonts/fk-screamer/fk-screamer-black-900.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Helvetica Neue LT Std */
+@font-face {
+    font-family: "HelveticaNeueLTStd";
+    src: url("../assets/fonts/helvetica-neue-lt-std/helvetica-neue-regular-extended-400.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "HelveticaNeueLTStd";
+    src: url("../assets/fonts/helvetica-neue-lt-std/helvetica-neue-medium-500.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "HelveticaNeueLTStd";
+    src: url("../assets/fonts/helvetica-neue-lt-std/helvetica-neue-bold-extended-900.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* GLOBAL TOKENS */
+:root {
+    /* colors */
+    --color-pale-red: #FEFBFA;
+    --color-beige: #FEF6E6;
+    --color-blue: #C6E3FF;
+    --color-yellow: #FEC930;
+    --color-pink: #EE83A4;
+    --color-orange: #FF7520;
+    --color-dark-orange: #FE5400;
+    --color-red: #D63C24;
+    --color-brown: #986706;
+    --color-black: #000000;
+
+    /* font-size */
+    --fontsize-xxl: 5rem;
+    --fontsize-xl: 4.5rem;
+    --fontsize-l: 2.2rem;
+    --fontsize-m: 1.6rem;
+    --fontsize-s: 1.5rem;
+    --fontsize-xs: 1.4rem;
+    --fontsize-xxs: 1.3rem;
+
+    /* line-height */
+    --lineheight-xl: 1.4;
+    --lineheight-l: 1.3;
+    --lineheight-m: 1.2;
+    --lineheight-normal: 1;
+    --lineheight-s: 0.9;
+    --lineheight-xs: 0.85;
+
+    /* letter-spacing */
+    --letterspacing-xl: 2px;
+    --letterspacing-l: 1.2px;
+    --letterspacing-m: 1.1px;
+    --letterspacing-s: 1px;
+    --letterspacing-xs: 0.5px;
+    --letterspacing-xxs: 0.1px;
+    --letterspacing-normal: normal;
+    --letterspacing-variable: 0.05em;
+
+    /* border-radius */
+    --radius-fix: 50px;
+    --radius-variable: 2.6rem;
+
+    /* space (margin / padding / gap) */
+    --space-xxl: 3.6rem;
+    --space-xl: 3.2rem;
+    --space-l: 2.8rem;
+    --space-m: 2.4rem;
+    --space-s: 2rem;
+    --space-xs: 1.6rem;
+    --space-xxs: 1rem;
+
+    --space-fix: 8px;
+    --space-percent: 3%;
+    --space-variable: 0.5em;
+}
