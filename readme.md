@@ -201,9 +201,8 @@ J’ai créé 2 cartes :
 
 - Un titre
 - Un petit paragraphe pour présenter ce qui était demandé pour ce projet
-- Un lien vers le site de référence
 - Une illustration à mon effigie — une héroïne qui tient une trompette — avec une photo de mon visage
-- Un lien vers le dépôt GitHub de ce projet
+- Un lien vers le site de référence
 
 ### Avant / après
 
