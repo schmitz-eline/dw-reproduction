@@ -23,7 +23,7 @@
     <!--  todo: mettre des liens internes pour les instruments / accessoires -> ils iront vers les cartes produits, et ces dans ces cartes qu'on mettra les liens externes  -->
 
     <!--  menu desktop  -->
-    <nav class="desktop-nav" aria-label="Desktop">
+    <nav class="desktop-nav" aria-label="Navigation principale">
         <ul class="nav-links">
             <li class="has-submenu">
                 <button type="button"
@@ -100,7 +100,7 @@
     <button type="button" class="burger" aria-label="Ouvrir le menu">
         <img src="./assets/svg/burger.svg" alt="Icône du burger menu" width="100" height="70">
     </button>
-    <div class="mobile-menu" role="navigation" aria-label="Mobile ou tablette">
+    <div class="mobile-menu" role="navigation" aria-label="Navigation mobile">
         <button type="button" class="close-menu" aria-label="Fermer le menu">
             <img src="./assets/svg/arrow-left.svg" alt="Flèche vers la gauche" width="100" height="79">
         </button>
@@ -190,8 +190,8 @@
     <h1 class="visually-hidden">Projet de reproduction</h1>
 
     <!--  hero carousel  -->
-    <section class="hero__carousel" aria-label="Présentation dans un carousel de 3 slides">
-        <h2 class="visually-hidden">Hero</h2>
+    <section class="hero__carousel">
+        <h2 class="visually-hidden">Carousel hero</h2>
         <div class="hero__viewport">
             <article class="hero__slide" aria-roledescription="slide">
                 <div class="hero__media hero__media--1">
@@ -261,7 +261,7 @@
     </section>
 
     <!--  ruban décoratif défilant  -->
-    <section class="ticker" aria-label="Ruban décoratif défilant">
+    <section class="ticker">
         <h2 class="visually-hidden">Ruban décoratif défilant</h2>
         <div class="ticker__viewport" aria-hidden="true">
             <div class="ticker__track">
@@ -318,11 +318,11 @@
     </section>
 
     <!--  section intégrée  -->
-    <section class="integration" aria-label="Section intégrée">
+    <section class="integration">
         <h2 class="visually-hidden">Section intégrée</h2>
         <div class="integration__grid">
             <!--  carte avec les consignes du projet  -->
-            <article class="integration__card integration__card--simple" aria-label="Consignes du projet">
+            <article class="integration__card integration__card--simple">
                 <h3 class="integration__title">Eline a reçu une mission</h3>
                 <p class="integration__text">
                     Pour mener ce projet à bien, Eline devait comprendre les principes de conception d’un site existant
@@ -351,13 +351,12 @@
                 </a>
             </article>
             <!--  carte avant/après recto-verso  -->
-            <article class="integration__card integration__card--flip" aria-label="Avant / après">
+            <article class="integration__card integration__card--flip">
                 <input type="checkbox" id="flip-card" class="hidden-input">
                 <div class="integration__flip-container">
                     <div class="integration__flip-inner">
                         <!--  avant  -->
-                        <section class="integration__face integration__face--front" aria-label="Avant"
-                                 aria-hidden="false">
+                        <section class="integration__face integration__face--front" aria-hidden="false">
                             <h3 class="integration__title">Géraldine a son univers</h3>
                             <p class="integration__text">
                                 Géraldine raconte son univers avec douceur&nbsp;: un monde artisanal, passionnant, où
@@ -386,8 +385,7 @@
                             </label>
                         </section>
                         <!--  après  -->
-                        <section class="integration__face integration__face--back" aria-label="Après"
-                                 aria-hidden="true">
+                        <section class="integration__face integration__face--back" aria-hidden="true">
                             <h3 class="integration__title">Nous aussi, on a le nôtre</h3>
                             <p class="integration__text">
                                 Eline a gardé cet accueil chaleureux, mais l’a accordé à notre univers. Elle a
@@ -418,6 +416,20 @@
                 </div>
             </article>
         </div>
+    </section>
+
+    <!--  présentation de la trompette  -->
+    <section class="presentation">
+        <h2 class="visually-hidden">Présentation de la trompette</h2>
+        <img src="./assets/svg/illu-trompette.svg" alt="L’illustration d’une trompette" width="100" height="37"
+             class="presentation__image">
+        <p class="presentation__text">
+            Je suis façonnée pour vibrer, briller et porter les émotions plus loin que les mots. Mon métal garde la
+            mémoire des mélodies que je fais naître. Et j’espère laisser, à mon tour, une petite empreinte dans le cœur
+            de celles et ceux qui m’écouteront… musiciens ou simples curieux.
+        </p>
+        <a href="https://youtu.be/4DkeNh3YCys" class="presentation__link" target="_blank"
+           rel="noopener noreferrer">Par ici la musique&nbsp;!</a>
     </section>
 
 </main>
