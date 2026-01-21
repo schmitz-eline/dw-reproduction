@@ -2,13 +2,27 @@
 
 .visually-hidden:not(:focus):not(:active) {
     clip-path: inset(50%);
-    height: 1px;
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
-    width: 1px;
+    width: 0;
+    height: 0;
 }
 
 .hidden-input {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+}
+
+.hidden-fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
 }
