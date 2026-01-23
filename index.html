@@ -92,13 +92,14 @@
 
     <!--  menu mobile / tablette  -->
     <button type="button" class="burger" aria-label="Ouvrir le menu">
-        <img src="./assets/svg/burger.svg" alt="Icône du burger menu" width="100" height="70">
+        <img src="./assets/svg/burger.svg" alt="Burger menu" width="100" height="70">
     </button>
     <div class="mobile-menu" role="navigation" aria-label="Navigation mobile">
         <button type="button" class="close-menu" aria-label="Fermer le menu">
             <img src="./assets/svg/arrow-left.svg" alt="Flèche vers la gauche" width="100" height="79">
         </button>
-        <img src="./assets/svg/logo.svg" alt="Eline et sa trompette, Seraing">
+        <img src="./assets/svg/logo.svg" alt="" width="100" height="60" aria-hidden="true"
+             class="mobile-nav__image--logo">
         <a href="#top" title="Retourner à l’accueil" class="mobile-menu__home-link">Accueil</a>
         <ul class="mobile-menu__nav">
             <li class="has-submenu">
@@ -164,12 +165,13 @@
                 </ul>
             </li>
         </ul>
-        <img src="./assets/svg/tampon.svg" alt="Présenté à Seraing, en Belgique" width="100" height="69">
+        <img src="./assets/svg/tampon.svg" alt="" width="100" height="69" aria-hidden="true"
+             class="mobile-nav__image--tampon">
     </div>
 
     <a href="https://atelierdegeraldine.fr/" target="_blank" rel="noopener noreferrer"
        title="Consulter le site de référence - L’Atelier de Géraldine">
-        <img src="./assets/svg/icone-lien-site.svg" alt="Icône du lien vers le site de référence" width="100"
+        <img src="./assets/svg/icone-lien-site.svg" alt="Vers le site de référence" width="100"
              height="75">
     </a>
 </header>
@@ -180,11 +182,11 @@
     <!--  hero carousel  -->
     <section class="hero__carousel">
         <h2 class="visually-hidden">Carousel hero</h2>
-        <div class="hero__track">
+        <div class="hero__track" aria-live="polite">
             <article class="hero__slide" aria-roledescription="slide">
                 <figure class="hero__figure hero__figure--1">
                     <img src="./assets/img/hero/hero-1-500.webp"
-                         alt="Photo d’Eline qui joue de la trompette à un concert" width="500" height="433"
+                         alt="Eline qui joue de la trompette à un concert" width="500" height="433"
                          srcset="./assets/img/hero/hero-1-500.webp 500w, ./assets/img/hero/hero-1-900.webp 900w, ./assets/img/hero/hero-1-1400.webp 1400w"
                          sizes="(min-width: 1100px) 32vw, 64vw" class="hero__image hero__image--1">
                 </figure>
@@ -310,7 +312,7 @@
     </section>
 
     <!--  section intégrée  -->
-    <section class="integration">
+    <section class="integration" id="integration">
         <h2 class="visually-hidden">Section intégrée</h2>
         <div class="integration__grid">
             <!--  carte avec les consignes du projet  -->
@@ -348,8 +350,8 @@
                 <h3 class="visually-hidden">Carte avant / après</h3>
                 <fieldset class="flip-card hidden-fieldset">
                     <legend class="visually-hidden">Retourner la carte</legend>
-                    <input type="radio" name="flip" id="flip-front" class="hidden-input" checked>
-                    <input type="radio" name="flip" id="flip-back" class="hidden-input">
+                    <input type="radio" name="flip" id="flip-front" aria-hidden="true" class="hidden-input" checked>
+                    <input type="radio" name="flip" id="flip-back" aria-hidden="true" class="hidden-input">
                 </fieldset>
                 <div class="integration__flip-container">
                     <div class="integration__flip-inner">
@@ -437,19 +439,19 @@
     </section>
 
     <!--  produits  -->
-    <section class="products">
+    <section class="products" id="products">
         <h2 class="visually-hidden">Instruments et accessoires</h2>
         <!--  filtres  -->
         <fieldset class="products__filters hidden-fieldset">
             <legend class="visually-hidden">Filtrer les produits</legend>
-            <input type="radio" name="filter" id="filter-instruments" class="hidden-input" checked>
+            <input type="radio" name="filter" id="filter-instruments" aria-hidden="true" class="hidden-input" checked>
             <label for="filter-instruments" class="products__filter">Instruments</label>
-            <input type="radio" name="filter" id="filter-accessoires" class="hidden-input">
+            <input type="radio" name="filter" id="filter-accessoires" aria-hidden="true" class="hidden-input">
             <label for="filter-accessoires" class="products__filter">Accessoires</label>
         </fieldset>
         <!--  carousel  -->
         <div class="products__carousel">
-            <div class="products__track">
+            <div class="products__track" role="region" aria-label="Liste des instruments et des accessoires">
                 <article class="product__card product__card--instrument incontournable" id="product-trompette">
                     <div class="product__image-wrapper">
                         <img src="assets/img/produits/trompette/trompette-400.webp" alt="Trompette" width="400"
@@ -653,14 +655,14 @@
     </section>
 
     <!--  à propos  -->
-    <section class="about">
+    <section class="about" id="about">
         <h2 class="visually-hidden">À propos</h2>
         <a href="https://www.universalis.fr/encyclopedie/trompette/" target="_blank" rel="noopener noreferrer"
            class="about__card about__card--histoire">
             <span class="about__title--left" aria-hidden="true">Qui suis-je&nbsp;?</span>
             <figure class="about__figure about__figure--histoire">
                 <img src="./assets/img/mon-histoire/mon-histoire-600.webp"
-                     alt="Photo d’Eline qui joue de la trompette dehors" width="600" height="600"
+                     alt="Eline qui joue de la trompette dehors" width="600" height="600"
                      srcset="./assets/img/mon-histoire/mon-histoire-600.webp 600w, ./assets/img/mon-histoire/mon-histoire-800.webp 800w, ./assets/img/mon-histoire/mon-histoire-1400.webp 1400w"
                      sizes="(min-width: 1100px) 34vw, 68vw" class="about__image about__image--histoire">
             </figure>
@@ -725,39 +727,39 @@
                     À vous de jouer
                 </a>
             </div>
-            <div class="footer-ticker__item">
+            <div aria-hidden="true" class="footer-ticker__item">
                 <figure class="footer-ticker__figure rotate-minus">
-                    <img src="./assets/svg/pastille-eclat.svg" width="100" height="65" alt="" aria-hidden="true">
+                    <img src="./assets/svg/pastille-eclat.svg" width="100" height="65" alt="">
                 </figure>
             </div>
-            <div class="footer-ticker__item">
+            <div aria-hidden="true" class="footer-ticker__item">
                 <figure class="footer-ticker__figure">
-                    <img src="./assets/svg/pastille-puissance.svg" width="100" height="65" alt="" aria-hidden="true">
+                    <img src="./assets/svg/pastille-puissance.svg" width="100" height="65" alt="">
                 </figure>
             </div>
-            <div class="footer-ticker__item">
+            <div aria-hidden="true" class="footer-ticker__item">
                 <figure class="footer-ticker__figure rotate-plus">
-                    <img src="./assets/svg/pastille-fluidite.svg" width="100" height="65" alt="" aria-hidden="true">
+                    <img src="./assets/svg/pastille-fluidite.svg" width="100" height="65" alt="">
                 </figure>
             </div>
-            <div class="footer-ticker__item">
+            <div aria-hidden="true" class="footer-ticker__item">
                 <figure class="footer-ticker__figure">
-                    <img src="./assets/svg/pastille-expressivite.svg" width="100" height="65" alt="" aria-hidden="true">
+                    <img src="./assets/svg/pastille-expressivite.svg" width="100" height="65" alt="">
                 </figure>
             </div>
-            <div class="footer-ticker__item">
+            <div aria-hidden="true" class="footer-ticker__item">
                 <figure class="footer-ticker__figure rotate-minus">
-                    <img src="./assets/svg/pastille-precision.svg" width="100" height="65" alt="" aria-hidden="true">
+                    <img src="./assets/svg/pastille-precision.svg" width="100" height="65" alt="">
                 </figure>
             </div>
-            <div class="footer-ticker__item">
+            <div aria-hidden="true" class="footer-ticker__item">
                 <figure class="footer-ticker__figure">
-                    <img src="./assets/svg/pastille-douceur.svg" width="100" height="65" alt="" aria-hidden="true">
+                    <img src="./assets/svg/pastille-douceur.svg" width="100" height="65" alt="">
                 </figure>
             </div>
-            <div class="footer-ticker__item">
+            <div aria-hidden="true" class="footer-ticker__item">
                 <figure class="footer-ticker__figure rotate-plus">
-                    <img src="./assets/svg/pastille-projection.svg" width="100" height="65" alt="" aria-hidden="true">
+                    <img src="./assets/svg/pastille-projection.svg" width="100" height="65" alt="">
                 </figure>
             </div>
             <!--  Deuxième série  -->
@@ -767,46 +769,46 @@
                     À vous de jouer
                 </a>
             </div>
-            <div class="footer-ticker__item">
+            <div aria-hidden="true" class="footer-ticker__item">
                 <figure class="footer-ticker__figure rotate-minus">
-                    <img src="./assets/svg/pastille-eclat.svg" width="100" height="65" alt="" aria-hidden="true">
+                    <img src="./assets/svg/pastille-eclat.svg" width="100" height="65" alt="">
                 </figure>
             </div>
-            <div class="footer-ticker__item">
+            <div aria-hidden="true" class="footer-ticker__item">
                 <figure class="footer-ticker__figure">
-                    <img src="./assets/svg/pastille-puissance.svg" width="100" height="65" alt="" aria-hidden="true">
+                    <img src="./assets/svg/pastille-puissance.svg" width="100" height="65" alt="">
                 </figure>
             </div>
-            <div class="footer-ticker__item">
+            <div aria-hidden="true" class="footer-ticker__item">
                 <figure class="footer-ticker__figure rotate-plus">
-                    <img src="./assets/svg/pastille-fluidite.svg" width="100" height="65" alt="" aria-hidden="true">
+                    <img src="./assets/svg/pastille-fluidite.svg" width="100" height="65" alt="">
                 </figure>
             </div>
-            <div class="footer-ticker__item">
+            <div aria-hidden="true" class="footer-ticker__item">
                 <figure class="footer-ticker__figure">
-                    <img src="./assets/svg/pastille-expressivite.svg" width="100" height="65" alt="" aria-hidden="true">
+                    <img src="./assets/svg/pastille-expressivite.svg" width="100" height="65" alt="">
                 </figure>
             </div>
-            <div class="footer-ticker__item">
+            <div aria-hidden="true" class="footer-ticker__item">
                 <figure class="footer-ticker__figure rotate-minus">
-                    <img src="./assets/svg/pastille-precision.svg" width="100" height="65" alt="" aria-hidden="true">
+                    <img src="./assets/svg/pastille-precision.svg" width="100" height="65" alt="">
                 </figure>
             </div>
-            <div class="footer-ticker__item">
+            <div aria-hidden="true" class="footer-ticker__item">
                 <figure class="footer-ticker__figure">
-                    <img src="./assets/svg/pastille-douceur.svg" width="100" height="65" alt="" aria-hidden="true">
+                    <img src="./assets/svg/pastille-douceur.svg" width="100" height="65" alt="">
                 </figure>
             </div>
-            <div class="footer-ticker__item">
+            <div aria-hidden="true" class="footer-ticker__item">
                 <figure class="footer-ticker__figure rotate-plus">
-                    <img src="./assets/svg/pastille-projection.svg" width="100" height="65" alt="" aria-hidden="true">
+                    <img src="./assets/svg/pastille-projection.svg" width="100" height="65" alt="">
                 </figure>
             </div>
         </div>
     </section>
 
     <!--  contact  -->
-    <section class="contact">
+    <section class="contact-cards">
         <h2 class="visually-hidden">Contact</h2>
         <article class="contact-card contact-card--email">
             <div class="contact-card__top">
@@ -839,12 +841,68 @@
                     De la musique et des émotions sans aucun bémol&nbsp;!
                 </p>
             </div>
-            <div class="contact-card__bottom">
-                <a href="https://musiclab.chromeexperiments.com/" target="_blank" rel="noopener noreferrer"
-                   class="contact__cta">Me découvrir autrement</a>
-            </div>
+            <a href="https://youtu.be/J76S21-QpOE" target="_blank" rel="noopener noreferrer" class="contact__cta">
+                Me découvrir autrement
+            </a>
         </article>
     </section>
+
+    <p class="footer__text">
+        Encouragée par sa maman flûtiste, Eline a commencé la trompette à l’âge de 10 ans. Musicienne amatrice, elle
+        évolue au sein de deux harmonies et nourrit une affection toute particulière pour la douceur du bugle. Son
+        interprétation sincère et authentique laisse rarement indifférent.
+    </p>
+
+    <section class="socials">
+        <h2 class="visually-hidden">Réseaux sociaux</h2>
+        <span class="socials__text">Suis-nous</span>
+        <a href="https://instagram.com/eline.stz" target="_blank" rel="noopener noreferrer"
+           title="Consulter le compte Instagram d’Eline" class="socials__link">
+            <img src="./assets/svg/icone-instagram.svg" width="100" height="100" alt="Instagram"
+                 class="socials__icon">
+        </a>
+        <a href="https://www.facebook.com/eline.stz" target="_blank" rel="noopener noreferrer"
+           title="Consulter le compte Facebook d’Eline" class="socials__link">
+            <img src="./assets/svg/icone-facebook.svg" width="100" height="215" alt="Facebook"
+                 class="socials__icon">
+        </a>
+    </section>
+
+    <img src="./assets/svg/logo.svg" alt="" width="100" height="60" aria-hidden="true" class="footer__image--logo">
+    <img src="./assets/svg/signature.svg" alt="" width="100" height="47" aria-hidden="true"
+         class="footer__image--signature">
+
+    <section class="footer__infos">
+        <h2 class="visually-hidden">Informations du pied de page</h2>
+        <ul class="footer__links">
+            <li><a href="#integration" class="footer__link">Le projet</a></li>
+            <li><a href="#products" class="footer__link">Les produits</a></li>
+            <li><a href="#about" class="footer__link">À propos de moi</a></li>
+            <li>
+                <a href="mailto:eline.schmitz@student.hepl.be" target="_blank" rel="noopener noreferrer"
+                   title="Envoyer un email à Eline" class="footer__link">Contacter Eline</a>
+            </li>
+        </ul>
+        <p class="footer__info">Copyright © 2026 L’atelier de Géraldine</p>
+        <p class="footer__info">Reproduit par Eline Schmitz, W202</p>
+        <address class="footer__address">
+            <a href="https://maps.app.goo.gl/yn4m9PxbyfnMgBWN8" target="_blank" rel="noopener noreferrer"
+               title="Voir le lieu sur Google Maps" class="footer__address-link">
+                Haute École de la Province de Liège<br>
+                Campus Parc des Marêts<br>
+                Rue Peetermans 80, 4100 Seraing, Belgique
+            </a>
+        </address>
+    </section>
+
+    <a href="https://github.com/schmitz-eline" target="_blank" rel="noopener noreferrer"
+       title="Consulter le profil d’Eline sur GitHub" class="footer__github-link">
+        <span class="github-link__text">D’autres projets&nbsp;?</span>
+        <img src="./assets/svg/icone-github.svg" width="100" height="98" alt="GitHub" aria-hidden="true"
+             class="github-link__icon">
+    </a>
+
+    <img src="./assets/svg/deco-footer.svg" alt="" width="100" height="17" class="footer__deco">
 
 </footer>
 
