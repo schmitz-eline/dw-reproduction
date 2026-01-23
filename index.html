@@ -180,12 +180,12 @@
         <h2 class="visually-hidden">Carousel hero</h2>
         <div class="hero__track">
             <article class="hero__slide" aria-roledescription="slide">
-                <div class="hero__media hero__media--1">
+                <figure class="hero__figure hero__figure--1">
                     <img src="./assets/img/hero/hero-1-500.webp"
                          alt="Photo d’Eline qui joue de la trompette à un concert" width="500" height="433"
                          srcset="./assets/img/hero/hero-1-500.webp 500w, ./assets/img/hero/hero-1-900.webp 900w, ./assets/img/hero/hero-1-1400.webp 1400w"
-                         sizes="(min-width: 1100px) 32vw, 64vw">
-                </div>
+                         sizes="(min-width: 1100px) 32vw, 64vw" class="hero__image hero__image--1">
+                </figure>
                 <div class="hero__content">
                     <h3 class="hero__title">Je suis la trompette</h3>
                     <p class="hero__text">
@@ -200,12 +200,12 @@
                 </div>
             </article>
             <article class="hero__slide" aria-roledescription="slide">
-                <div class="hero__media hero__media--2">
+                <figure class="hero__figure hero__figure--2">
                     <img src="./assets/img/hero/hero-2-800.webp" alt="Une trompette, une trompette piccolo et un bugle"
                          width="800" height="711"
                          srcset="./assets/img/hero/hero-2-800.webp 800w, ./assets/img/hero/hero-2-1400.webp 1400w, ./assets/img/hero/hero-2-2200.webp 2200w"
-                         sizes="(min-width: 1100px) 50vw, 100vw">
-                </div>
+                         sizes="(min-width: 1100px) 50vw, 100vw" class="hero__image hero__image--2">
+                </figure>
                 <div class="hero__content">
                     <h3 class="hero__title">La toute-puissante</h3>
                     <p class="hero__text">
@@ -220,12 +220,12 @@
                 </div>
             </article>
             <article class="hero__slide" aria-roledescription="slide">
-                <div class="hero__media hero__media--3">
+                <figure class="hero__figure hero__figure--3">
                     <img src="./assets/img/hero/hero-3-500.webp" alt="Une trompette posée sur des partitions"
                          width="500" height="750"
                          srcset="./assets/img/hero/hero-3-500.webp 500w, ./assets/img/hero/hero-3-900.webp 900w, ./assets/img/hero/hero-3-1400.webp 1400w"
-                         sizes="(min-width: 1100px) 32vw, 64vw">
-                </div>
+                         sizes="(min-width: 1100px) 32vw, 64vw" class="hero__image hero__image--3">
+                </figure>
                 <div class="hero__content">
                     <h3 class="hero__title">Un instrument éclatant</h3>
                     <p class="hero__text">
@@ -335,7 +335,7 @@
                 <a href="https://atelierdegeraldine.fr/" class="integration__cta" target="_blank"
                    rel="noopener noreferrer">
                     <span class="cta-text cta-text__normal">Voir le site de référence</span>
-                    <img src="./assets/svg/icone-lien-site.svg" alt="" class="cta-icon">
+                    <img src="./assets/svg/icone-lien-site.svg" alt="" width="100" height="75" class="cta-icon">
                     <span class="cta-text cta-text__reversed">Voir le site de référence</span>
                 </a>
             </article>
@@ -376,7 +376,8 @@
                             </figure>
                             <label for="flip-back" class="integration__toggle">
                                 <span class="cta-text cta-text__normal">Voir le après</span>
-                                <img src="./assets/svg/icone-apres.svg" alt="" class="cta-icon">
+                                <img src="./assets/svg/icone-apres.svg" alt="" width="100" height="100"
+                                     class="cta-icon">
                                 <span class="cta-text cta-text__reversed">Voir le après</span>
                             </label>
                         </section>
@@ -406,7 +407,8 @@
                             </figure>
                             <label for="flip-front" class="integration__toggle">
                                 <span class="cta-text cta-text__normal">Voir le avant</span>
-                                <img src="./assets/svg/icone-avant.svg" alt="" class="cta-icon">
+                                <img src="./assets/svg/icone-avant.svg" alt="" width="100" height="100"
+                                     class="cta-icon">
                                 <span class="cta-text cta-text__reversed">Voir le avant</span>
                             </label>
                         </section>
@@ -644,6 +646,63 @@
                  class="ingredient__image ingredient__image--passion">
             <figcaption class="ingredient__caption">De la passion</figcaption>
         </figure>
+    </section>
+
+    <!--  à propos  -->
+    <section class="about">
+        <h2 class="visually-hidden">À propos</h2>
+        <a href="https://www.universalis.fr/encyclopedie/trompette/" rel="noopener noreferrer"
+           class="about__card about__card--histoire">
+            <span class="about__title--left" aria-hidden="true">Qui suis-je&nbsp;?</span>
+            <figure class="about__figure about__figure--histoire">
+                <img src="./assets/img/mon-histoire/mon-histoire-600.webp"
+                     alt="Photo d’Eline qui joue de la trompette dehors" width="600" height="600"
+                     srcset="./assets/img/mon-histoire/mon-histoire-600.webp 600w, ./assets/img/mon-histoire/mon-histoire-800.webp 800w, ./assets/img/mon-histoire/mon-histoire-1400.webp 1400w"
+                     sizes="(min-width: 1100px) 34vw, 68vw" class="about__image about__image--histoire">
+            </figure>
+            <h3 class="about__title--right">Mon histoire</h3>
+        </a>
+        <a href="https://www.symphozik.info/l-expression-musicale-des-emotions,657,dossier.html"
+           rel="noopener noreferrer" class="about__card about__card--decouvrir">
+            <h3 class="about__title">50 nuances d’émotions (ou presque)</h3>
+            <p class="about__text">
+                Derrière chacune de mes notes se cache une palette infinie de nuances et de textures. Je peux exprimer
+                la joie, la tension ou la douceur. C’est cette richesse émotionnelle qui me rend toujours vivante,
+                jamais tout à fait la même.
+            </p>
+            <div class="about__cta">
+                <span class="cta-text cta-text__normal">Me découvrir</span>
+                <img src="./assets/svg/icone-me-decouvrir.svg" alt="" width="100" height="100" class="cta-icon">
+                <span class="cta-text cta-text__reversed">Me découvrir</span>
+            </div>
+        </a>
+        <a href="https://www.coursdetrompette.fr/la-trompette-son-origine-jusqua-nos-jours" rel="noopener noreferrer"
+           class="about__card about__card--savoir">
+            <h3 class="about__title">Brisons le silence&nbsp;!</h3>
+            <p class="about__text">
+                Façonnée par plus d’un siècle d’histoire, je traverse les époques sans perdre mon éclat. D’abord
+                utilisée pour rassembler, annoncer et célébrer, j’ai appris à m’adapter et à m’exprimer dans différents
+                styles. Aujourd’hui encore, je continue de faire vibrer les émotions et de porter les mélodies plus
+                loin.
+            </p>
+            <div class="about__cta">
+                <span class="cta-text cta-text__normal">En savoir +</span>
+                <img src="./assets/svg/icone-en-savoir-plus.svg" alt="" width="100" height="100" class="cta-icon">
+                <span class="cta-text cta-text__reversed">En savoir +</span>
+            </div>
+        </a>
+        <a href="https://www.radiofrance.fr/francemusique/video-la-trompette-comment-ca-marche-lucienne-renaudin-vary-8506348"
+           rel="noopener noreferrer"
+           class="about__card about__card--sound">
+            <span class="about__title--left" aria-hidden="true">Un son unique pour un musicien unique</span>
+            <figure class="about__figure about__figure--sound">
+                <img src="./assets/img/vinyle/vinyle-300.webp"
+                     alt="Vinyle" width="300" height="300"
+                     srcset="./assets/img/vinyle/vinyle-300.webp 300w, ./assets/img/vinyle/vinyle-500.webp 500w, ./assets/img/vinyle/vinyle-700.webp 700w"
+                     sizes="(min-width: 1100px) 18vw, 36vw" class="about__image about__image--sound">
+            </figure>
+            <h3 class="about__title--right">Un son unique pour un musicien unique</h3>
+        </a>
     </section>
 
 </main>
