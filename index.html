@@ -15,7 +15,7 @@
 </head>
 
 <body id="top">
-<a href="#main-content" class="visually-hidden" aria-label="Aller au contenu principal"><i lang="en">Skip navigation</i></a>
+<a href="#main-content" class="visually-hidden focusable">Aller au contenu principal</a>
 
 <header>
     <a href="#top" class="header-logo">
@@ -259,47 +259,47 @@
         <div class="ticker__viewport">
             <div class="ticker__track">
                 <!--  Première série  -->
-                <div class="ticker__item">
+                <figure class="ticker__item">
                     <img src="./assets/svg/icone-elegance.svg" alt="" class="ticker__icon" width="100" height="100">
-                    <span class="ticker__word">Élégance</span>
-                </div>
-                <div class="ticker__item">
+                    <figcaption class="ticker__word">Élégance</figcaption>
+                </figure>
+                <figure class="ticker__item">
                     <img src="./assets/svg/icone-passion.svg" alt="" class="ticker__icon" width="100" height="87">
-                    <span class="ticker__word">Passion</span>
-                </div>
-                <div class="ticker__item">
+                    <figcaption class="ticker__word">Passion</figcaption>
+                </figure>
+                <figure class="ticker__item">
                     <img src="./assets/svg/icone-rigueur.svg" alt="" class="ticker__icon" width="100" height="100">
-                    <span class="ticker__word">Rigueur</span>
-                </div>
-                <div class="ticker__item">
+                    <figcaption class="ticker__word">Rigueur</figcaption>
+                </figure>
+                <figure class="ticker__item">
                     <img src="./assets/svg/icone-emotion.svg" alt="" class="ticker__icon" width="100" height="100">
-                    <span class="ticker__word">Émotion</span>
-                </div>
-                <div class="ticker__item">
+                    <figcaption class="ticker__word">Émotion</figcaption>
+                </figure>
+                <figure class="ticker__item">
                     <img src="./assets/svg/icone-partage.svg" alt="" class="ticker__icon" width="100" height="100">
-                    <span class="ticker__word">Partage</span>
-                </div>
+                    <figcaption class="ticker__word">Partage</figcaption>
+                </figure>
                 <!--  Deuxième série  -->
-                <div class="ticker__item">
+                <figure class="ticker__item">
                     <img src="./assets/svg/icone-elegance.svg" alt="" class="ticker__icon" width="100" height="100">
-                    <span class="ticker__word">Élégance</span>
-                </div>
-                <div class="ticker__item">
+                    <figcaption class="ticker__word">Élégance</figcaption>
+                </figure>
+                <figure class="ticker__item">
                     <img src="./assets/svg/icone-passion.svg" alt="" class="ticker__icon" width="100" height="87">
-                    <span class="ticker__word">Passion</span>
-                </div>
-                <div class="ticker__item">
+                    <figcaption class="ticker__word">Passion</figcaption>
+                </figure>
+                <figure class="ticker__item">
                     <img src="./assets/svg/icone-rigueur.svg" alt="" class="ticker__icon" width="100" height="100">
-                    <span class="ticker__word">Rigueur</span>
-                </div>
-                <div class="ticker__item">
+                    <figcaption class="ticker__word">Rigueur</figcaption>
+                </figure>
+                <figure class="ticker__item">
                     <img src="./assets/svg/icone-emotion.svg" alt="" class="ticker__icon" width="100" height="100">
-                    <span class="ticker__word">Émotion</span>
-                </div>
-                <div class="ticker__item">
+                    <figcaption class="ticker__word">Émotion</figcaption>
+                </figure>
+                <figure class="ticker__item">
                     <img src="./assets/svg/icone-partage.svg" alt="" class="ticker__icon" width="100" height="100">
-                    <span class="ticker__word">Partage</span>
-                </div>
+                    <figcaption class="ticker__word">Partage</figcaption>
+                </figure>
             </div>
         </div>
         <!--  navigation  -->
@@ -321,15 +321,14 @@
                 <p class="integration__text">
                     Pour mener ce projet à bien, Eline devait comprendre les principes de conception d’un site existant
                     & le reproduire en adaptant son contenu afin de présenter ce qu’elle a de plus précieux&nbsp;—&nbsp;moi,
-                    sa
-                    trompette&nbsp;!
+                    sa trompette&nbsp;!
                 </p>
                 <p class="integration__text">
                     Elle a observé chaque détail, analysé chaque nuance et réinterprété l’ensemble avec soin. Ce travail
                     minutieux lui a permis de créer une version fidèle, mais profondément personnelle, où chaque choix
                     reflète son regard, sa sensibilité… et un peu de mon éclat.
                 </p>
-                <div class="integration__personnage">
+                <figure class="integration__personnage">
                     <img src="./assets/svg/illu-super-heroine.svg"
                          alt="Corps d’une super-héroïne qui brandit une trompette" width="100" height="119"
                          class="integration__personnage--body">
@@ -337,7 +336,7 @@
                          height="244"
                          srcset="./assets/img/section-integree/visage-200.webp 200w, ./assets/img/section-integree/visage-400.webp 400w, ./assets/img/section-integree/visage-600.webp 600w"
                          sizes="(min-width: 1100px) 13vw, 26vw" class="integration__personnage--face">
-                </div>
+                </figure>
                 <a href="https://atelierdegeraldine.fr/" class="integration__cta" target="_blank"
                    rel="noopener noreferrer">
                     <span class="cta-text cta-text__normal">Voir le site de référence</span>
@@ -368,7 +367,8 @@
                                      height="73">
                                 <figcaption class="integration__caption">Un logo à son image</figcaption>
                             </figure>
-                            <img src="./assets/svg/deco-separation-biscuit.svg" alt="" width="100" height="3"
+                            <img src="./assets/svg/deco-separation-biscuit.svg" alt="" aria-hidden="true" width="100"
+                                 height="3"
                                  class="integration__deco integration__deco--biscuit">
                             <figure class="integration__figure">
                                 <img src="assets/img/section-integree/biscuit-600.webp"
@@ -383,8 +383,8 @@
                             <label for="flip-back" class="integration__toggle">
                                 <span class="cta-text cta-text__normal">Voir le après</span>
                                 <img src="./assets/svg/icone-apres.svg" alt="" width="100" height="100"
-                                     class="cta-icon">
-                                <span class="cta-text cta-text__reversed">Voir le après</span>
+                                     class="cta-icon" aria-hidden="true">
+                                <span class="cta-text cta-text__reversed" aria-hidden="true">Voir le après</span>
                             </label>
                         </section>
                         <!--  après  -->
@@ -400,7 +400,7 @@
                                      height="75">
                                 <figcaption class="integration__caption">Un logo à notre image</figcaption>
                             </figure>
-                            <img src="./assets/svg/deco-separation.svg" alt="" width="100" height="3"
+                            <img src="./assets/svg/deco-separation.svg" alt="" aria-hidden="true" width="100" height="3"
                                  class="integration__deco integration__deco--musique">
                             <figure class="integration__figure">
                                 <img src="assets/img/vinyle/vinyle-300.webp" alt="Vinyle" width="300" height="300"
@@ -414,8 +414,8 @@
                             <label for="flip-front" class="integration__toggle">
                                 <span class="cta-text cta-text__normal">Voir le avant</span>
                                 <img src="./assets/svg/icone-avant.svg" alt="" width="100" height="100"
-                                     class="cta-icon">
-                                <span class="cta-text cta-text__reversed">Voir le avant</span>
+                                     class="cta-icon" aria-hidden="true">
+                                <span class="cta-text cta-text__reversed" aria-hidden="true">Voir le avant</span>
                             </label>
                         </section>
                     </div>
@@ -452,158 +452,188 @@
         <!--  carousel  -->
         <div class="products__carousel">
             <div class="products__track" role="region" aria-label="Liste des instruments et des accessoires">
-                <article class="product__card product__card--instrument incontournable" id="product-trompette">
-                    <div class="product__image-wrapper">
-                        <img src="assets/img/produits/trompette/trompette-400.webp" alt="Trompette" width="400"
+                <article itemscope itemtype="https://schema.org/Product"
+                         class="product__card product__card--instrument incontournable" id="product-trompette">
+                    <figure class="product__image-wrapper">
+                        <img itemprop="image" src="assets/img/produits/trompette/trompette-400.webp" alt="Trompette"
+                             width="400"
                              height="600"
                              srcset="assets/img/produits/trompette/trompette-400.webp 400w, assets/img/produits/trompette/trompette-700.webp 700w, assets/img/produits/trompette/trompette-1000.webp 1000w"
                              sizes="(min-width: 992px) 21vw, (min-width: 768px) 29vw, (min-width: 478px) 45vw, 94vw"
                              loading="lazy" decoding="async">
-                    </div>
-                    <span class="product__mood">Solaire</span>
-                    <h3 class="product__name">La Trompette</h3>
-                    <span class="product__tone">Puissance</span>
-                    <a href="https://fr.wikipedia.org/wiki/Trompette" target="_blank" rel="noopener noreferrer"
+                    </figure>
+                    <span itemprop="description" class="product__mood">Solaire</span>
+                    <h3 itemprop="name" class="product__name">La Trompette</h3>
+                    <span itemprop="potentialAction" class="product__tone">Puissance</span>
+                    <a itemprop="url" href="https://fr.wikipedia.org/wiki/Trompette" target="_blank"
+                       rel="noopener noreferrer"
                        title="Découvrir la trompette" class="product__cta">Explorer</a>
                 </article>
-                <article class="product__card product__card--instrument wow" id="product-bugle">
-                    <div class="product__image-wrapper">
-                        <img src="assets/img/produits/bugle/bugle-400.webp" alt="Bugle" width="400" height="600"
+                <article itemscope itemtype="https://schema.org/Product"
+                         class="product__card product__card--instrument wow" id="product-bugle">
+                    <figure class="product__image-wrapper">
+                        <img itemprop="image" src="assets/img/produits/bugle/bugle-400.webp" alt="Bugle" width="400"
+                             height="600"
                              srcset="assets/img/produits/bugle/bugle-400.webp 400w, assets/img/produits/bugle/bugle-700.webp 700w, assets/img/produits/bugle/bugle-1000.webp 1000w"
                              sizes="(min-width: 992px) 21vw, (min-width: 768px) 29vw, (min-width: 478px) 45vw, 94vw"
                              loading="lazy" decoding="async">
-                    </div>
-                    <span class="product__mood">Poétique</span>
-                    <h3 class="product__name">Le Bugle</h3>
-                    <span class="product__tone">Rondeur</span>
-                    <a href="https://fr.wikipedia.org/wiki/Bugle" target="_blank" rel="noopener noreferrer"
+                    </figure>
+                    <span itemprop="description" class="product__mood">Poétique</span>
+                    <h3 itemprop="name" class="product__name">Le Bugle</h3>
+                    <span itemprop="potentialAction" class="product__tone">Rondeur</span>
+                    <a itemprop="url" href="https://fr.wikipedia.org/wiki/Bugle" target="_blank"
+                       rel="noopener noreferrer"
                        title="Découvrir le bugle" class="product__cta">Explorer</a>
                 </article>
-                <article class="product__card product__card--instrument" id="product-piccolo">
-                    <div class="product__image-wrapper">
-                        <img src="assets/img/produits/trompette-piccolo/trompette-piccolo-400.webp"
+                <article itemscope itemtype="https://schema.org/Product" class="product__card product__card--instrument"
+                         id="product-piccolo">
+                    <figure class="product__image-wrapper">
+                        <img itemprop="image" src="assets/img/produits/trompette-piccolo/trompette-piccolo-400.webp"
                              alt="Trompette piccolo" width="400" height="600"
                              srcset="assets/img/produits/trompette-piccolo/trompette-piccolo-400.webp 400w, assets/img/produits/trompette-piccolo/trompette-piccolo-700.webp 700w, assets/img/produits/trompette-piccolo/trompette-piccolo-1000.webp 1000w"
                              sizes="(min-width: 992px) 21vw, (min-width: 768px) 29vw, (min-width: 478px) 45vw, 94vw"
                              loading="lazy" decoding="async">
-                    </div>
-                    <span class="product__mood">Étincelante</span>
-                    <h3 class="product__name">La Trompette <i lang="it">Piccolo</i></h3>
-                    <span class="product__tone">Brillance</span>
-                    <a href="https://fr.wikipedia.org/wiki/Trompette_piccolo" target="_blank" rel="noopener noreferrer"
+                    </figure>
+                    <span itemprop="description" class="product__mood">Étincelante</span>
+                    <h3 itemprop="name" class="product__name">La Trompette <i lang="it">Piccolo</i></h3>
+                    <span itemprop="potentialAction" class="product__tone">Brillance</span>
+                    <a itemprop="url" href="https://fr.wikipedia.org/wiki/Trompette_piccolo" target="_blank"
+                       rel="noopener noreferrer"
                        title="Découvrir la trompette piccolo" class="product__cta">Explorer</a>
                 </article>
-                <article class="product__card product__card--instrument" id="product-cornet">
-                    <div class="product__image-wrapper">
-                        <img src="assets/img/produits/cornet/cornet-400.webp" alt="Cornet" width="400" height="600"
+                <article itemscope itemtype="https://schema.org/Product" class="product__card product__card--instrument"
+                         id="product-cornet">
+                    <figure class="product__image-wrapper">
+                        <img itemprop="image" src="assets/img/produits/cornet/cornet-400.webp" alt="Cornet" width="400"
+                             height="600"
                              srcset="assets/img/produits/cornet/cornet-400.webp 400w, assets/img/produits/cornet/cornet-700.webp 700w, assets/img/produits/cornet/cornet-1000.webp 1000w"
                              sizes="(min-width: 992px) 21vw, (min-width: 768px) 29vw, (min-width: 478px) 45vw, 94vw"
                              loading="lazy" decoding="async">
-                    </div>
-                    <span class="product__mood">Délicat</span>
-                    <h3 class="product__name">Le Cornet</h3>
-                    <span class="product__tone">Chaleur</span>
-                    <a href="https://www.britannica.com/art/cornet" hreflang="en" target="_blank"
+                    </figure>
+                    <span itemprop="description" class="product__mood">Délicat</span>
+                    <h3 itemprop="name" class="product__name">Le Cornet</h3>
+                    <span itemprop="potentialAction" class="product__tone">Chaleur</span>
+                    <a itemprop="url" href="https://www.britannica.com/art/cornet" hreflang="en" target="_blank"
                        rel="noopener noreferrer" title="Découvrir le cornet" class="product__cta">Explorer</a>
                 </article>
-                <article class="product__card product__card--accessoire incontournable" id="product-straight">
-                    <div class="product__image-wrapper">
-                        <img src="assets/img/produits/straight-mute/straight-mute-400.webp" alt="Straight mute"
+                <article itemscope itemtype="https://schema.org/Product"
+                         class="product__card product__card--accessoire incontournable" id="product-straight">
+                    <figure class="product__image-wrapper">
+                        <img itemprop="image" src="assets/img/produits/straight-mute/straight-mute-400.webp"
+                             alt="Straight mute"
                              width="400" height="600"
                              srcset="assets/img/produits/straight-mute/straight-mute-400.webp 400w, assets/img/produits/straight-mute/straight-mute-700.webp 700w, assets/img/produits/straight-mute/straight-mute-1000.webp 1000w"
                              sizes="(min-width: 992px) 21vw, (min-width: 768px) 29vw, (min-width: 478px) 45vw, 94vw"
                              loading="lazy" decoding="async">
-                    </div>
-                    <span class="product__mood">Affirmée</span>
-                    <h3 class="product__name">La <i lang="en">Straight Mute</i></h3>
-                    <span class="product__tone">Projection</span>
-                    <a href="https://resources.tonebase.co/trumpet/trumpet-posts/what-is-a-straight-mute-on-the-trumpet"
+                    </figure>
+                    <span itemprop="description" class="product__mood">Affirmée</span>
+                    <h3 itemprop="name" class="product__name">La <i lang="en">Straight Mute</i></h3>
+                    <span itemprop="potentialAction" class="product__tone">Projection</span>
+                    <a itemprop="url"
+                       href="https://resources.tonebase.co/trumpet/trumpet-posts/what-is-a-straight-mute-on-the-trumpet"
                        hreflang="en" target="_blank" rel="noopener noreferrer" title="Découvrir la straight mute"
                        class="product__cta">Explorer</a>
                 </article>
-                <article class="product__card product__card--accessoire wow" id="product-cup">
-                    <div class="product__image-wrapper">
-                        <img src="assets/img/produits/cup-mute/cup-mute-400.webp" alt="Cup mute" width="400"
+                <article itemscope itemtype="https://schema.org/Product"
+                         class="product__card product__card--accessoire wow" id="product-cup">
+                    <figure class="product__image-wrapper">
+                        <img itemprop="image" src="assets/img/produits/cup-mute/cup-mute-400.webp" alt="Cup mute"
+                             width="400"
                              height="600"
                              srcset="assets/img/produits/cup-mute/cup-mute-400.webp 400w, assets/img/produits/cup-mute/cup-mute-700.webp 700w, assets/img/produits/cup-mute/cup-mute-1000.webp 1000w"
                              sizes="(min-width: 992px) 21vw, (min-width: 768px) 29vw, (min-width: 478px) 45vw, 94vw"
                              loading="lazy" decoding="async">
-                    </div>
-                    <span class="product__mood">Intime</span>
-                    <h3 class="product__name">La <i lang="en">Cup Mute</i></h3>
-                    <span class="product__tone">Velours</span>
-                    <a href="https://resources.tonebase.co/trumpet/trumpet-posts/what-is-a-cup-mute-on-the-trumpet"
+                    </figure>
+                    <span itemprop="description" class="product__mood">Intime</span>
+                    <h3 itemprop="name" class="product__name">La <i lang="en">Cup Mute</i></h3>
+                    <span itemprop="potentialAction" class="product__tone">Velours</span>
+                    <a itemprop="url"
+                       href="https://resources.tonebase.co/trumpet/trumpet-posts/what-is-a-cup-mute-on-the-trumpet"
                        hreflang="en" target="_blank" rel="noopener noreferrer" title="Découvrir la cup mute"
                        class="product__cta">Explorer</a>
                 </article>
-                <article class="product__card product__card--accessoire" id="product-wah-wah">
-                    <div class="product__image-wrapper">
-                        <img src="assets/img/produits/wah-wah/wah-wah-400.webp" alt="Wah-wah" width="400" height="600"
+                <article itemscope itemtype="https://schema.org/Product" class="product__card product__card--accessoire"
+                         id="product-wah-wah">
+                    <figure class="product__image-wrapper">
+                        <img itemprop="image" src="assets/img/produits/wah-wah/wah-wah-400.webp" alt="Wah-wah"
+                             width="400" height="600"
                              srcset="assets/img/produits/wah-wah/wah-wah-400.webp 400w, assets/img/produits/wah-wah/wah-wah-700.webp 700w, assets/img/produits/wah-wah/wah-wah-1000.webp 1000w"
                              sizes="(min-width: 992px) 21vw, (min-width: 768px) 29vw, (min-width: 478px) 45vw, 94vw"
                              loading="lazy" decoding="async">
-                    </div>
-                    <span class="product__mood">Charismatique</span>
-                    <h3 class="product__name">La Wah-Wah</h3>
-                    <span class="product__tone">Expressivité</span>
-                    <a href="https://tomcrownmutes.com/iv-wah-wah/" hreflang="en" target="_blank"
+                    </figure>
+                    <span itemprop="description" class="product__mood">Charismatique</span>
+                    <h3 itemprop="name" class="product__name">La Wah-Wah</h3>
+                    <span itemprop="potentialAction" class="product__tone">Expressivité</span>
+                    <a itemprop="url" href="https://tomcrownmutes.com/iv-wah-wah/" hreflang="en" target="_blank"
                        rel="noopener noreferrer" title="Découvrir la wah-wah" class="product__cta">Explorer</a>
                 </article>
-                <article class="product__card product__card--accessoire" id="product-practice">
-                    <div class="product__image-wrapper">
-                        <img src="assets/img/produits/practice-mute/practice-mute-400.webp" alt="Practice mute"
+                <article itemscope itemtype="https://schema.org/Product" class="product__card product__card--accessoire"
+                         id="product-practice">
+                    <figure class="product__image-wrapper">
+                        <img itemprop="image" src="assets/img/produits/practice-mute/practice-mute-400.webp"
+                             alt="Practice mute"
                              width="400" height="600"
                              srcset="assets/img/produits/practice-mute/practice-mute-400.webp 400w, assets/img/produits/practice-mute/practice-mute-700.webp 700w, assets/img/produits/practice-mute/practice-mute-1000.webp 1000w"
                              sizes="(min-width: 992px) 21vw, (min-width: 768px) 29vw, (min-width: 478px) 45vw, 94vw"
                              loading="lazy" decoding="async">
-                    </div>
-                    <span class="product__mood">Studieuse</span>
-                    <h3 class="product__name">La <i lang="en">Practice Mute</i></h3>
-                    <span class="product__tone">Discrétion</span>
-                    <a href="https://www.schoolmusiconline.com/trumpet-practice-mute" hreflang="en" target="_blank"
+                    </figure>
+                    <span itemprop="description" class="product__mood">Studieuse</span>
+                    <h3 itemprop="name" class="product__name">La <i lang="en">Practice Mute</i></h3>
+                    <span itemprop="potentialAction" class="product__tone">Discrétion</span>
+                    <a itemprop="url" href="https://www.schoolmusiconline.com/trumpet-practice-mute" hreflang="en"
+                       target="_blank"
                        rel="noopener noreferrer" title="Découvrir la practice mute" class="product__cta">Explorer</a>
                 </article>
-                <article class="product__card product__card--accessoire" id="product-kit">
-                    <div class="product__image-wrapper">
-                        <img src="assets/img/produits/kit-entretien/kit-entretien-400.webp" alt="Kit d’entretien"
+                <article itemscope itemtype="https://schema.org/Product" class="product__card product__card--accessoire"
+                         id="product-kit">
+                    <figure class="product__image-wrapper">
+                        <img itemprop="image" src="assets/img/produits/kit-entretien/kit-entretien-400.webp"
+                             alt="Kit d’entretien"
                              width="400" height="600"
                              srcset="assets/img/produits/kit-entretien/kit-entretien-400.webp 400w, assets/img/produits/kit-entretien/kit-entretien-700.webp 700w, assets/img/produits/kit-entretien/kit-entretien-1000.webp 1000w"
                              sizes="(min-width: 992px) 21vw, (min-width: 768px) 29vw, (min-width: 478px) 45vw, 94vw"
                              loading="lazy" decoding="async">
-                    </div>
-                    <span class="product__mood">Soigneux</span>
-                    <h3 class="product__name">Le Kit d’Entretien</h3>
-                    <span class="product__tone">Propreté</span>
-                    <a href="https://kgumusic.com/blogs/news/trumpet-maintenance-keeping-your-instrument-in-top-shape"
+                    </figure>
+                    <span itemprop="description" class="product__mood">Soigneux</span>
+                    <h3 itemprop="name" class="product__name">Le Kit d’Entretien</h3>
+                    <span itemprop="potentialAction" class="product__tone">Propreté</span>
+                    <a itemprop="url"
+                       href="https://kgumusic.com/blogs/news/trumpet-maintenance-keeping-your-instrument-in-top-shape"
                        hreflang="en" target="_blank" rel="noopener noreferrer"
                        title="En savoir plus sur le kit d’entretien" class="product__cta">Explorer</a>
                 </article>
-                <article class="product__card product__card--accessoire" id="product-huile-graisse">
-                    <div class="product__image-wrapper">
-                        <img src="assets/img/produits/huile-graisse/huile-graisse-400.webp" alt="Huile et graisse"
+                <article itemscope itemtype="https://schema.org/Product" class="product__card product__card--accessoire"
+                         id="product-huile-graisse">
+                    <figure class="product__image-wrapper">
+                        <img itemprop="image" src="assets/img/produits/huile-graisse/huile-graisse-400.webp"
+                             alt="Huile et graisse"
                              width="400" height="600"
                              srcset="assets/img/produits/huile-graisse/huile-graisse-400.webp 400w, assets/img/produits/huile-graisse/huile-graisse-700.webp 700w, assets/img/produits/huile-graisse/huile-graisse-1000.webp 1000w"
                              sizes="(min-width: 992px) 21vw, (min-width: 768px) 29vw, (min-width: 478px) 45vw, 94vw"
                              loading="lazy" decoding="async">
-                    </div>
-                    <span class="product__mood">Essentiels</span>
-                    <h3 class="product__name">L’Huile & la Graisse</h3>
-                    <span class="product__tone">Fluidité</span>
-                    <a href="https://www.coursdetrompette.fr/huiles-et-graisses-pour-trompette-comparatif-2025-des-meilleurs-produits-dentretien"
+                    </figure>
+                    <span itemprop="description" class="product__mood">Essentiels</span>
+                    <h3 itemprop="name" class="product__name">L’Huile & la Graisse</h3>
+                    <span itemprop="potentialAction" class="product__tone">Fluidité</span>
+                    <a itemprop="url"
+                       href="https://www.coursdetrompette.fr/huiles-et-graisses-pour-trompette-comparatif-2025-des-meilleurs-produits-dentretien"
                        target="_blank" rel="noopener noreferrer" title="En savoir plus sur l’huile et la graisse"
                        class="product__cta">Explorer</a>
                 </article>
-                <article class="product__card product__card--accessoire incontournable" id="product-housse">
-                    <div class="product__image-wrapper">
-                        <img src="assets/img/produits/housse/housse-400.webp" alt="Housse" width="400" height="600"
+                <article itemscope itemtype="https://schema.org/Product"
+                         class="product__card product__card--accessoire incontournable" id="product-housse">
+                    <figure class="product__image-wrapper">
+                        <img itemprop="image" src="assets/img/produits/housse/housse-400.webp" alt="Housse" width="400"
+                             height="600"
                              srcset="assets/img/produits/housse/housse-400.webp 400w, assets/img/produits/housse/housse-700.webp 700w, assets/img/produits/housse/housse-1000.webp 1000w"
                              sizes="(min-width: 992px) 21vw, (min-width: 768px) 29vw, (min-width: 478px) 45vw, 94vw"
                              loading="lazy" decoding="async">
-                    </div>
-                    <span class="product__mood">Protectrice</span>
-                    <h3 class="product__name">La Housse</h3>
-                    <span class="product__tone">Transport</span>
-                    <a href="https://musiccritic.com/equipment/best-trumpet-cases/" hreflang="en" target="_blank"
+                    </figure>
+                    <span itemprop="description" class="product__mood">Protectrice</span>
+                    <h3 itemprop="name" class="product__name">La Housse</h3>
+                    <span itemprop="potentialAction" class="product__tone">Transport</span>
+                    <a itemprop="url" href="https://musiccritic.com/equipment/best-trumpet-cases/" hreflang="en"
+                       target="_blank"
                        rel="noopener noreferrer" title="En savoir plus sur la housse" class="product__cta">Explorer</a>
                 </article>
             </div>
@@ -617,7 +647,7 @@
         </div>
     </section>
 
-    <img src="./assets/svg/deco-separation.svg" alt="" width="100" height="3">
+    <img src="./assets/svg/deco-separation.svg" alt="" aria-hidden="true" width="100" height="3">
 
     <!--  ingrédients  -->
     <section class="ingredients">
@@ -676,11 +706,11 @@
                 la joie, la tension ou la douceur. C’est cette richesse émotionnelle qui me rend toujours vivante,
                 jamais tout à fait la même.
             </p>
-            <div class="about__cta">
-                <span class="cta-text cta-text__normal">Me découvrir</span>
+            <figure class="about__cta">
+                <figcaption class="cta-text cta-text__normal">Me découvrir</figcaption>
                 <img src="./assets/svg/icone-me-decouvrir.svg" alt="" width="100" height="100" class="cta-icon">
-                <span class="cta-text cta-text__reversed">Me découvrir</span>
-            </div>
+                <span class="cta-text cta-text__reversed" aria-hidden="true">Me découvrir</span>
+            </figure>
         </a>
         <a href="https://www.coursdetrompette.fr/la-trompette-son-origine-jusqua-nos-jours" target="_blank"
            rel="noopener noreferrer"
@@ -692,11 +722,11 @@
                 styles. Aujourd’hui encore, je continue de faire vibrer les émotions et de porter les mélodies plus
                 loin.
             </p>
-            <div class="about__cta">
-                <span class="cta-text cta-text__normal">En savoir +</span>
+            <figure class="about__cta">
+                <figcaption class="cta-text cta-text__normal">En savoir +</figcaption>
                 <img src="./assets/svg/icone-en-savoir-plus.svg" alt="" width="100" height="100" class="cta-icon">
-                <span class="cta-text cta-text__reversed">En savoir +</span>
-            </div>
+                <span class="cta-text cta-text__reversed" aria-hidden="true">En savoir +</span>
+            </figure>
         </a>
         <a href="https://www.radiofrance.fr/francemusique/video-la-trompette-comment-ca-marche-lucienne-renaudin-vary-8506348"
            target="_blank" rel="noopener noreferrer"
@@ -902,7 +932,7 @@
              class="github-link__icon">
     </a>
 
-    <img src="./assets/svg/deco-footer.svg" alt="" width="100" height="17" class="footer__deco">
+    <img src="./assets/svg/deco-footer.svg" alt="" width="100" height="17" aria-hidden="true" class="footer__deco">
 
 </footer>
 
