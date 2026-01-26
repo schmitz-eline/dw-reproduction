@@ -179,7 +179,7 @@ header {
 .mobile-menu__nav .submenu-toggle::after {
     display: block;
     content: '';
-    background-image: url("../assets/svg/arrow-down.svg");
+    background-image: url("../../assets/svg/arrow-down.svg");
     width: 15px;
     background-size: contain;
     background-position: center;
@@ -258,7 +258,7 @@ header {
     .desktop-nav .submenu-toggle::after {
         display: block;
         content: '';
-        background-image: url("../assets/svg/arrow-nav.svg");
+        background-image: url("../../assets/svg/arrow-nav.svg");
         width: 6px;
         background-size: contain;
         background-position: center;
