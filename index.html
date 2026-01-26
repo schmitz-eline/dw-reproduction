@@ -12,27 +12,24 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/tokens.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script defer type="module" src="./js/main.js"></script>
 </head>
 
 <body id="top">
 <a href="#main-content" class="visually-hidden focusable">Aller au contenu principal</a>
 
 <header>
-    <a href="#top" class="header-logo">
-        <img src="./assets/svg/logo-eline.svg" alt="Eline et sa trompette" width="100" height="75">
+    <a href="#top" class="home-logo">
+        <img src="./assets/svg/logo-header.svg" alt="Eline et sa trompette" width="100" height="81"
+             class="home-logo__image">
     </a>
 
     <!--  menu desktop  -->
     <nav class="desktop-nav" aria-label="Navigation principale">
         <ul class="nav-links">
             <li class="has-submenu">
-                <button type="button"
-                        class="submenu-toggle"
-                        aria-expanded="false"
-                        aria-controls="desktop-submenu-instruments">
-                    Instruments
-                </button>
-                <ul class="submenu" id="desktop-submenu-instruments">
+                <span class="submenu-toggle">Instruments</span>
+                <ul class="submenu">
                     <li><a href="#product-trompette" title="Découvrir la trompette">La trompette</a></li>
                     <li><a href="#product-bugle" title="Découvrir le bugle">Le bugle</a></li>
                     <li>
@@ -44,13 +41,8 @@
                 </ul>
             </li>
             <li class="has-submenu">
-                <button type="button"
-                        class="submenu-toggle"
-                        aria-expanded="false"
-                        aria-controls="desktop-submenu-accessoires">
-                    Accessoires
-                </button>
-                <ul class="submenu" id="desktop-submenu-accessoires">
+                <span class="submenu-toggle">Accessoires</span>
+                <ul class="submenu">
                     <li>
                         <a href="#product-straight" title="Découvrir la straight mute">La <i lang="en">straight mute</i></a>
                     </li>
@@ -70,13 +62,8 @@
                 </ul>
             </li>
             <li class="has-submenu">
-                <button type="button"
-                        class="submenu-toggle"
-                        aria-expanded="false"
-                        aria-controls="desktop-submenu-contact">
-                    Contacter Eline
-                </button>
-                <ul class="submenu" id="desktop-submenu-contact">
+                <span class="submenu-toggle">Contacter Eline</span>
+                <ul class="submenu">
                     <li><a href="mailto:eline.schmitz@student.hepl.be" target="_blank" rel="noopener noreferrer"
                            title="Envoyer un email à Eline">Email</a></li>
                     <li><a href="https://github.com/schmitz-eline" target="_blank" rel="noopener noreferrer"
@@ -91,89 +78,127 @@
     </nav>
 
     <!--  menu mobile / tablette  -->
-    <button type="button" class="burger" aria-label="Ouvrir le menu">
-        <img src="./assets/svg/burger.svg" alt="Burger menu" width="100" height="70">
-    </button>
+    <input type="checkbox" id="menu-toggle" class="hidden-input menu-toggle">
     <div class="mobile-menu" role="navigation" aria-label="Navigation mobile">
-        <button type="button" class="close-menu" aria-label="Fermer le menu">
-            <img src="./assets/svg/arrow-left.svg" alt="Flèche vers la gauche" width="100" height="79">
-        </button>
-        <img src="./assets/svg/logo.svg" alt="" width="100" height="60" aria-hidden="true"
-             class="mobile-nav__image--logo">
-        <a href="#top" title="Retourner à l’accueil" class="mobile-menu__home-link">Accueil</a>
-        <ul class="mobile-menu__nav">
-            <li class="has-submenu">
-                <button type="button"
-                        class="submenu-toggle"
-                        aria-expanded="false"
-                        aria-controls="mobile-submenu-instruments">
-                    Instruments
-                </button>
-                <ul class="submenu" id="mobile-submenu-instruments">
-                    <li><a href="#product-trompette" title="Découvrir la trompette">La trompette</a></li>
-                    <li><a href="#product-bugle" title="Découvrir le bugle">Le bugle</a></li>
-                    <li>
-                        <a href="#product-piccolo" title="Découvrir la trompette piccolo">
-                            La trompette <i lang="it">piccolo</i>
-                        </a>
-                    </li>
-                    <li><a href="#product-cornet" title="Découvrir le cornet">Le cornet</a></li>
-                </ul>
-            </li>
-            <li class="has-submenu">
-                <button type="button"
-                        class="submenu-toggle"
-                        aria-expanded="false"
-                        aria-controls="mobile-submenu-accessoires">
-                    Accessoires
-                </button>
-                <ul class="submenu" id="mobile-submenu-accessoires">
-                    <li>
-                        <a href="#product-straight" title="Découvrir la straight mute">La <i lang="en">straight mute</i></a>
-                    </li>
-                    <li><a href="#product-cup" title="Découvrir la cup mute">La <i lang="en">cup mute</i></a></li>
-                    <li><a href="#product-wah-wah" title="Découvrir la wah-wah">La wah-wah</a></li>
-                    <li>
-                        <a href="#product-practice" title="Découvrir la practice mute">La <i lang="en">practice mute</i></a>
-                    </li>
-                    <li>
-                        <a href="#product-kit" title="En savoir plus sur le kit d’entretien">Le kit d’entretien</a></li>
-                    <li>
-                        <a href="#product-huile-graisse" title="En savoir plus sur l’huile et la graisse">
-                            L’huile & la graisse
-                        </a>
-                    </li>
-                    <li><a href="#product-housse" title="En savoir plus sur la housse">La housse</a></li>
-                </ul>
-            </li>
-            <li class="has-submenu">
-                <button type="button"
-                        class="submenu-toggle"
-                        aria-expanded="false"
-                        aria-controls="mobile-submenu-contact">
-                    Contacter Eline
-                </button>
-                <ul class="submenu" id="mobile-submenu-contact">
-                    <li><a href="mailto:eline.schmitz@student.hepl.be" target="_blank" rel="noopener noreferrer"
-                           title="Envoyer un email à Eline">Email</a></li>
-                    <li><a href="https://github.com/schmitz-eline" target="_blank" rel="noopener noreferrer"
-                           title="Consulter le profil d’Eline sur GitHub">GitHub</a></li>
-                    <li><a href="https://instagram.com/eline.stz" target="_blank" rel="noopener noreferrer"
-                           title="Consulter le compte Instagram d’Eline">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/eline.stz" target="_blank" rel="noopener noreferrer"
-                           title="Consulter le compte Facebook d’Eline">Facebook</a></li>
-                </ul>
-            </li>
-        </ul>
-        <img src="./assets/svg/tampon.svg" alt="" width="100" height="69" aria-hidden="true"
-             class="mobile-nav__image--tampon">
+        <label for="menu-toggle" class="close-menu">
+            <img src="./assets/svg/arrow-left.svg" alt="Fermer le menu" width="100" height="79">
+        </label>
+        <div class="mobile-menu__content">
+            <figure class="mobile-menu__logo">
+                <img src="./assets/svg/logo.svg" alt="" width="100" height="60" aria-hidden="true">
+            </figure>
+            <ul class="mobile-menu__nav">
+                <li>
+                    <a href="#top" title="Retourner à l’accueil">Accueil</a>
+                    <label for="menu-toggle" class="close-on-click"></label>
+                </li>
+                <li class="has-submenu">
+                    <input type="checkbox" id="mobile-submenu-instruments" class="hidden-input submenu-checkbox">
+                    <label for="mobile-submenu-instruments" class="submenu-toggle">Instruments</label>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#product-trompette" title="Découvrir la trompette">La trompette</a>
+                            <label for="menu-toggle" class="close-on-click"></label>
+                        </li>
+                        <li>
+                            <a href="#product-bugle" title="Découvrir le bugle">Le bugle</a>
+                            <label for="menu-toggle" class="close-on-click"></label>
+                        </li>
+                        <li>
+                            <a href="#product-piccolo" title="Découvrir la trompette piccolo">
+                                La trompette <i lang="it">piccolo</i>
+                            </a>
+                            <label for="menu-toggle" class="close-on-click"></label>
+                        </li>
+                        <li>
+                            <a href="#product-cornet" title="Découvrir le cornet">Le cornet</a>
+                            <label for="menu-toggle" class="close-on-click"></label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <input type="checkbox" id="mobile-submenu-accessoires" class="hidden-input submenu-checkbox">
+                    <label for="mobile-submenu-accessoires" class="submenu-toggle">Accessoires</label>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#product-straight" title="Découvrir la straight mute">La <i lang="en">straight
+                                mute</i></a>
+                            <label for="menu-toggle" class="close-on-click"></label>
+                        </li>
+                        <li>
+                            <a href="#product-cup" title="Découvrir la cup mute">La <i lang="en">cup mute</i></a>
+                            <label for="menu-toggle" class="close-on-click"></label>
+                        </li>
+                        <li>
+                            <a href="#product-wah-wah" title="Découvrir la wah-wah">La wah-wah</a>
+                            <label for="menu-toggle" class="close-on-click"></label>
+                        </li>
+                        <li>
+                            <a href="#product-practice" title="Découvrir la practice mute">La <i lang="en">practice
+                                mute</i></a>
+                            <label for="menu-toggle" class="close-on-click"></label>
+                        </li>
+                        <li>
+                            <a href="#product-kit" title="En savoir plus sur le kit d’entretien">Le kit d’entretien</a>
+                            <label for="menu-toggle" class="close-on-click"></label>
+                        </li>
+                        <li>
+                            <a href="#product-huile-graisse" title="En savoir plus sur l’huile et la graisse">
+                                L’huile & la graisse
+                            </a>
+                            <label for="menu-toggle" class="close-on-click"></label>
+                        </li>
+                        <li>
+                            <a href="#product-housse" title="En savoir plus sur la housse">La housse</a>
+                            <label for="menu-toggle" class="close-on-click"></label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <input type="checkbox" id="mobile-submenu-contact" class="hidden-input submenu-checkbox">
+                    <label for="mobile-submenu-contact" class="submenu-toggle">Contacter Eline</label>
+                    <ul class="submenu">
+                        <li>
+                            <a href="mailto:eline.schmitz@student.hepl.be" target="_blank" rel="noopener noreferrer"
+                               title="Envoyer un email à Eline">Email</a>
+                            <label for="menu-toggle" class="close-on-click"></label>
+                        </li>
+                        <li>
+                            <a href="https://github.com/schmitz-eline" target="_blank" rel="noopener noreferrer"
+                               title="Consulter le profil d’Eline sur GitHub">GitHub</a>
+                            <label for="menu-toggle" class="close-on-click"></label>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/eline.stz" target="_blank" rel="noopener noreferrer"
+                               title="Consulter le compte Instagram d’Eline">Instagram</a>
+                            <label for="menu-toggle" class="close-on-click"></label>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/eline.stz" target="_blank" rel="noopener noreferrer"
+                               title="Consulter le compte Facebook d’Eline">Facebook</a>
+                            <label for="menu-toggle" class="close-on-click"></label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <figure class="mobile-menu__tampon">
+                <img src="./assets/svg/tampon.svg" alt="" width="100" height="69" aria-hidden="true">
+            </figure>
+        </div>
     </div>
 
-    <a href="https://atelierdegeraldine.fr/" target="_blank" rel="noopener noreferrer"
-       title="Consulter le site de référence - L’Atelier de Géraldine">
-        <img src="./assets/svg/icone-lien-site.svg" alt="Vers le site de référence" width="100"
-             height="75">
-    </a>
+    <!--  burger menu et lien  -->
+    <div class="header__actions">
+        <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu">
+            <img src="./assets/svg/burger.svg" alt="Ouvrir le menu" width="100" height="70">
+        </label>
+
+        <a href="https://atelierdegeraldine.fr/" target="_blank" rel="noopener noreferrer"
+           title="Consulter le site de référence - L’Atelier de Géraldine" class="link-to-site">
+            <img src="./assets/svg/icone-lien-site.svg" alt="Vers le site de référence" width="100"
+                 height="75">
+        </a>
+    </div>
 </header>
 
 <main id="main-content" tabindex="-1">

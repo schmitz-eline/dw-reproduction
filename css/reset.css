@@ -1,16 +1,27 @@
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
+html {
+    overflow-x: hidden;
     font-size: 10px;
+    font-weight: normal;
+    line-height: 1;
 }
 
-ol, ul {
-    list-style: none;
+html * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--color-black);
 }
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+ol, ul {
+    list-style: none;
 }
 
 button {
@@ -18,4 +29,5 @@ button {
     border: none;
     font: inherit;
     cursor: pointer;
+    text-transform: inherit;
 }

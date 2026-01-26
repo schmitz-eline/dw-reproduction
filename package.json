@@ -1,0 +1,14 @@
+{
+  "name": "reproduction",
+  "version": "1.0.0",
+  "description": "Site de référence : https://atelierdegeraldine.fr/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^6.4.1"
+  }
+}

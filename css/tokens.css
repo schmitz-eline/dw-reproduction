@@ -100,9 +100,8 @@
     font-display: swap;
 }
 
-/* GLOBAL TOKENS */
+/* COLORS */
 :root {
-    /* colors */
     --color-pale-red: #FEFBFA;
     --color-beige: #FEF6E6;
     --color-blue: #C6E3FF;
@@ -113,48 +112,4 @@
     --color-red: #D63C24;
     --color-brown: #986706;
     --color-black: #000000;
-
-    /* font-size */
-    --fontsize-xxl: 5rem;
-    --fontsize-xl: 4.5rem;
-    --fontsize-l: 2.2rem;
-    --fontsize-m: 1.6rem;
-    --fontsize-s: 1.5rem;
-    --fontsize-xs: 1.4rem;
-    --fontsize-xxs: 1.3rem;
-
-    /* line-height */
-    --lineheight-xl: 1.4;
-    --lineheight-l: 1.3;
-    --lineheight-m: 1.2;
-    --lineheight-normal: 1;
-    --lineheight-s: 0.9;
-    --lineheight-xs: 0.85;
-
-    /* letter-spacing */
-    --letterspacing-xl: 2px;
-    --letterspacing-l: 1.2px;
-    --letterspacing-m: 1.1px;
-    --letterspacing-s: 1px;
-    --letterspacing-xs: 0.5px;
-    --letterspacing-xxs: 0.1px;
-    --letterspacing-normal: normal;
-    --letterspacing-variable: 0.05em;
-
-    /* border-radius */
-    --radius-fix: 50px;
-    --radius-variable: 2.6rem;
-
-    /* space (margin / padding / gap) */
-    --space-xxl: 3.6rem;
-    --space-xl: 3.2rem;
-    --space-l: 2.8rem;
-    --space-m: 2.4rem;
-    --space-s: 2rem;
-    --space-xs: 1.6rem;
-    --space-xxs: 1rem;
-
-    --space-fix: 8px;
-    --space-percent: 3%;
-    --space-variable: 0.5em;
 }
