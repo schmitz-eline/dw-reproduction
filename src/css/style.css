@@ -310,7 +310,7 @@ header {
     font-family: 'FKScreamer', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 5.2rem;
+    font-size: 5rem;
     line-height: 0.9;
     letter-spacing: 2px;
     margin-bottom: 0.5em;
@@ -327,6 +327,7 @@ header {
 .hero__text {
     line-height: 1.2;
     margin-bottom: 0.5em;
+    max-width: 400px;
 }
 
 .hero__text b {
@@ -393,20 +394,40 @@ header {
 
 /* TABLET ///////////////////////////////////////////////////////////////////////// */
 
-/* header */
+@media (min-width: 680px) {
 
-@media (min-width: 500px) {
+    /* header */
+
     .home-logo {
         width: 164px;
         margin-bottom: -34px;
+    }
+
+    /* hero */
+    .hero__content {
+        padding: 10.3rem 2.2rem;
+        row-gap: 2.2rem;
+    }
+
+    .hero__title {
+        font-size: 7rem;
+    }
+
+    .hero__text, .hero__slide-number {
+        font-size: 1.55rem;
+    }
+
+    .hero__slide-number {
+        margin-bottom: 2.2rem;
     }
 }
 
 /* DESKTOP //////////////////////////////////////////////////////////////////////// */
 
-/* header */
+@media (min-width: 990px) {
 
-@media (min-width: 1110px) {
+    /* header */
+
     .desktop-nav {
         display: block;
         font-size: 1.6rem;
@@ -488,5 +509,29 @@ header {
     .desktop-nav .submenu-toggle:hover::after {
         transform: rotate(90deg);
         transition: transform 0.2s ease;
+    }
+
+    /* hero */
+    .hero__slide {
+        grid-template-rows: none;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        align-content: center;
+    }
+
+    .hero__content {
+        padding: 15.8rem 2.8rem;
+        row-gap: 2.8rem;
+    }
+
+    .hero__title {
+        font-size: 9rem;
+    }
+
+    .hero__text, .hero__slide-number {
+        font-size: 1.6rem;
+    }
+
+    .hero__slide-number {
+        margin-bottom: 2.8rem;
     }
 }
