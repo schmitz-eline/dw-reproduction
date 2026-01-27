@@ -392,12 +392,90 @@ header {
     z-index: 1;
 }
 
+/* ticker */
+
+.ticker {
+    position: relative;
+    background: var(--color-red);
+}
+
+.ticker__viewport {
+    width: 100%;
+    overflow: hidden;
+    transform: translateX(0);
+    transition: transform 0.4s ease;
+}
+
+.ticker__inner {
+    transform: translateX(0);
+    transition: transform 0.4s ease;
+    will-change: transform;
+}
+
+.ticker__track {
+    display: flex;
+    column-gap: 4rem;
+    width: max-content;
+    padding: 1.4rem 0;
+    animation: ticker 20s linear infinite;
+    will-change: transform;
+}
+
+@keyframes ticker {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.ticker__item {
+    font-size: 3.2rem;
+    line-height: 1;
+    display: flex;
+    column-gap: 4rem;
+    flex: 0 0 auto;
+    align-items: center;
+}
+
+.ticker__item:last-child {
+    margin-right: 4rem;
+}
+
+.ticker__word {
+    font-family: 'FKScreamer', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-pale-red);
+}
+
+.ticker__figure img {
+    height: 0.8em;
+}
+
+.ticker__nav {
+    position: absolute;
+    width: 9px;
+    min-height: 100%;
+    top: 0;
+    cursor: pointer;
+}
+
+.ticker__nav--previous {
+    left: 2rem;
+}
+
+.ticker__nav--next {
+    right: 2rem;
+}
+
 /* TABLET ///////////////////////////////////////////////////////////////////////// */
 
 @media (min-width: 680px) {
 
     /* header */
-
     .home-logo {
         width: 164px;
         margin-bottom: -34px;
@@ -427,7 +505,6 @@ header {
 @media (min-width: 990px) {
 
     /* header */
-
     .desktop-nav {
         display: block;
         font-size: 1.6rem;
