@@ -43,12 +43,6 @@
     pointer-events: none;
 }
 
-/* BASE /////////////////////////////////////////////////////////////////////////// */
-
-body {
-    background: var(--color-beige);
-}
-
 /* MOBILE-FIRST /////////////////////////////////////////////////////////////////// */
 
 /* header */
@@ -471,6 +465,213 @@ header {
     right: 2rem;
 }
 
+/* integration + about card */
+
+.integration, .about {
+    margin-top: 3.6rem;
+}
+
+.integration__grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.about {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.integration__card--simple, .integration__face, .about__card {
+    display: flex;
+    padding: 3.2rem 1.6rem;
+    border-radius: 50px;
+    text-align: center;
+    gap: 2rem;
+}
+
+.integration__card--simple, .integration__face, .about__card--decouvrir, .about__card--savoir {
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__card--histoire, .about__card--sound {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about__card--decouvrir, .about__card--savoir {
+    justify-content: center;
+}
+
+.integration__card--simple {
+    background: var(--color-dark-orange);
+}
+
+.integration__face, .about__card--decouvrir {
+    background: var(--color-yellow);
+}
+
+.about__card--histoire {
+    background: var(--color-red);
+}
+
+.about__card--savoir {
+    background: var(--color-orange);
+}
+
+.about__card--sound {
+    background: var(--color-blue);
+}
+
+.integration__title, .about__title {
+    font-family: 'FKScreamer', sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 0.85;
+    text-transform: uppercase;
+}
+
+.about__title--left, .about__title--right {
+    font-family: 'BricolageGrotesque', sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.about__title--left {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.about__title--right {
+    writing-mode: vertical-lr;
+    transform: rotate(0deg);
+}
+
+.integration__text, .about__text, .integration__caption {
+    font-family: 'BricolageGrotesque', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 0.5em;
+}
+
+.integration__personnage {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.integration__personnage--body {
+    width: 100%;
+    margin-top: -27.8%;
+}
+
+.integration__personnage--face {
+    width: 36%;
+    align-self: flex-end;
+    z-index: 1000;
+    margin-right: 15%;
+}
+
+.integration__figure {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 100%;
+    align-items: center;
+}
+
+.integration__figure img {
+    width: 64%;
+}
+
+.integration__face {
+    overflow: hidden;
+}
+
+.integration__deco {
+    height: 1rem;
+    overflow: visible;
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: auto 100%;
+    width: calc(100% + 3.2rem);
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+}
+
+.integration__deco--biscuit {
+    background-image: url("../../assets/svg/deco-separation-biscuit.svg");
+}
+
+.integration__deco--musique {
+    background-image: url("../../assets/svg/deco-separation.svg");
+}
+
+.about__figure--histoire, .about__image-wrapper--sound {
+    display: inline-block;
+    height: fit-content;
+    width: auto;
+}
+
+.about__figure--histoire {
+    mask-image: url("../../assets/svg/masque-mon-histoire.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}
+
+.about__image-wrapper--sound {
+    display: grid;
+    width: 100%;
+}
+
+.about__figure--vinyle {
+    grid-area: 1 / 1;
+    width: 52%;
+    z-index: 1000;
+    justify-self: center;
+    margin-top: 20%;
+    filter: drop-shadow(0 1vh 1vh rgba(0, 0, 0, 0.4));
+}
+
+.about__figure--sound {
+    grid-area: 1 / 1;
+    width: 100%;
+}
+
+.cta-text {
+    font-family: 'HelveticaNeueLTStd', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.integration__cta, .integration__toggle, .about__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cta-icon {
+    width: 81px;
+}
+
+.cta-text__normal {
+    margin-top: 7px;
+}
+
+.cta-text__reversed {
+    display: block;
+    transform: rotate(180deg);
+}
+
 /* TABLET ///////////////////////////////////////////////////////////////////////// */
 
 @media (min-width: 680px) {
@@ -497,6 +698,55 @@ header {
 
     .hero__slide-number {
         margin-bottom: 2.2rem;
+    }
+
+    /* integration + about card */
+    .integration__grid {
+        display: grid;
+        grid-template-rows: none;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .integration__card--simple, .integration__face, .about__card {
+        padding: 5.6rem 2.2rem;
+        gap: 3rem;
+    }
+
+    .integration__title, .about__title {
+        font-size: 5.25rem;
+    }
+
+    .about__title--left, .about__title--right {
+        font-size: 1.75rem;
+    }
+
+    .integration__text, .about__text {
+        font-size: 1.55rem;
+        width: 70%;
+    }
+
+    .integration__figure {
+        row-gap: 3rem;
+    }
+
+    .integration__deco {
+        width: calc(100% + 4.4rem);
+        margin-left: -2.2rem;
+        margin-right: -2.2rem;
+    }
+
+    .integration__caption {
+        font-size: 1.55rem;
+    }
+
+    .integration__cta, .integration__toggle, .about__cta {
+        gap: 3rem;
     }
 }
 
@@ -610,5 +860,42 @@ header {
 
     .hero__slide-number {
         margin-bottom: 2.8rem;
+    }
+
+    /* integration + about card */
+    .integration__card--simple, .integration__face, .about__card {
+        padding: 8rem 2.8rem;
+        gap: 4rem;
+    }
+
+    .integration__title, .about__title {
+        font-size: 6rem;
+    }
+
+    .about__title--left, .about__title--right {
+        font-size: 1.9rem;
+    }
+
+    .integration__text, .about__text {
+        font-size: 1.6rem;
+    }
+
+    .integration__figure {
+        row-gap: 4rem;
+    }
+
+    .integration__deco {
+        height: 2rem;
+        width: calc(100% + 5.6rem);
+        margin-left: -2.8rem;
+        margin-right: -2.8rem;
+    }
+
+    .integration__caption {
+        font-size: 1.6rem;
+    }
+
+    .integration__cta, .integration__toggle, .about__cta {
+        gap: 4rem;
     }
 }
