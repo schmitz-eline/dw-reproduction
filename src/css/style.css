@@ -606,8 +606,18 @@ header {
     background-image: url("../../assets/svg/deco-separation-biscuit.svg");
 }
 
-.integration__deco--musique {
+.integration__deco--musique, .body__deco {
     background-image: url("../../assets/svg/deco-separation.svg");
+}
+
+.body__deco {
+    height: 3.5rem;
+    overflow: visible;
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: auto 100%;
+    width: 100%;
+    margin: 3rem 0;
 }
 
 .about__figure--histoire, .about__image-wrapper--sound {
@@ -1034,6 +1044,10 @@ header {
         margin-right: -2.2rem;
     }
 
+    .body__deco {
+        margin: 5.5rem 0;
+    }
+
     .integration__caption {
         font-size: 1.55rem;
     }
@@ -1223,6 +1237,10 @@ header {
         width: calc(100% + 5.6rem);
         margin-left: -2.8rem;
         margin-right: -2.8rem;
+    }
+
+    .body__deco {
+        margin: 8rem 0;
     }
 
     .integration__caption {
