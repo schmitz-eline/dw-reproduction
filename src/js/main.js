@@ -8,6 +8,7 @@ const reproduction = {
         this.addHeroCarouselNav();
         this.manageTickerScroll();
         this.addTickerNav();
+        this.addProductsNav();
     },
 
     getHtmlElements() {
@@ -98,6 +99,48 @@ const reproduction = {
             this.offset = 0;
         }
         inner.style.transform = `translateX(${this.offset}px)`;
+    },
+
+    addProductsNav() {
+        const track = document.querySelector(settings.productsTrackSelector);
+        const previous = document.querySelector(settings.productsPreviousSelector);
+        const next = document.querySelector(settings.productsNextSelector);
+        let index = 0;
+        previous.addEventListener('click', () => {
+            if (index > 0) {
+                index--;
+                this.updateProductsCarousel(index, track);
+            }
+        });
+        next.addEventListener('click', () => {
+            const visibleCards = this.getVisibleCards();
+            if (index < visibleCards.length - 1) {
+                index++;
+                this.updateProductsCarousel(index, track);
+            }
+        });
+        document.querySelectorAll(settings.filterInputSelector).forEach(input => {
+            input.addEventListener('change', () => {
+                index = 0;
+                this.updateProductsCarousel(index, track);
+            });
+        });
+        window.addEventListener('resize', this.updateProductsCarousel);
+    },
+
+    getVisibleCards() {
+        return [...document.querySelectorAll(settings.productCardSelector)].filter(card => getComputedStyle(card).display !== 'none');
+    },
+
+    updateProductsCarousel(index, track) {
+        const visibleCards = this.getVisibleCards();
+        if (visibleCards.length === 0) {
+            return;
+        }
+        const cardWidth = visibleCards[0].offsetWidth;
+        const gap = parseFloat(getComputedStyle(visibleCards[0]).marginRight);
+        const offset = -(index * (cardWidth + gap));
+        track.style.transform = `translateX(${offset}px)`;
     }
 };
 

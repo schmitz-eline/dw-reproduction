@@ -11,4 +11,9 @@ export const settings = {
     tickerNextSelector: '.ticker__nav--next',
     tickerItemSelector: '.ticker__item',
     tickerInnerSelector: '.ticker__inner',
+    productsTrackSelector: '.products__track',
+    productsPreviousSelector: '.products__nav--previous',
+    productsNextSelector: '.products__nav--next',
+    productCardSelector: '.product__card',
+    filterInputSelector: 'input[name="filter"]',
 }
