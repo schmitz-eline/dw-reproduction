@@ -625,11 +625,13 @@ header {
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: contain;
+    max-width: 440px;
 }
 
 .about__image-wrapper--sound {
     display: grid;
     width: 100%;
+    max-width: 360px;
 }
 
 .about__figure--vinyle {
@@ -717,6 +719,22 @@ header {
 
 .integration__card--flip:has(#flip-front:checked) .integration__flip-inner {
     transform: rotateY(0deg);
+}
+
+.integration__cta .cta-icon, .integration__toggle .cta-icon, .about__cta .cta-icon {
+    transition: transform 1.5s ease;
+}
+
+.integration__cta:hover .cta-icon, .integration__toggle:hover .cta-icon, .about__card--decouvrir:hover .cta-icon, .about__card--savoir:hover .cta-icon {
+    transform: rotate(290deg);
+}
+
+.about__figure {
+    transition: transform 0.3s ease-in-out;
+}
+
+.about__card--histoire:hover .about__figure, .about__card--sound:hover .about__figure {
+    transform: scale(1.03);
 }
 
 /* presentation */
