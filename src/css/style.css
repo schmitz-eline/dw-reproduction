@@ -659,6 +659,10 @@ header {
     gap: 2rem;
 }
 
+.integration__cta, .integration__toggle {
+    cursor: pointer;
+}
+
 .cta-icon {
     width: 81px;
 }
@@ -896,6 +900,7 @@ header {
     }
 
     .integration__cta, .integration__toggle, .about__cta {
+        flex-direction: row;
         gap: 4rem;
     }
 }
