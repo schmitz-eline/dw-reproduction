@@ -9,6 +9,7 @@ const reproduction = {
         this.manageTickerScroll();
         this.addTickerNav();
         this.addProductsNav();
+        this.manageFooterTickerScroll();
     },
 
     getHtmlElements() {
@@ -141,6 +142,15 @@ const reproduction = {
         const gap = parseFloat(getComputedStyle(visibleCards[0]).marginRight);
         const offset = -(index * (cardWidth + gap));
         track.style.transform = `translateX(${offset}px)`;
+    },
+
+    manageFooterTickerScroll() {
+        document.addEventListener('DOMContentLoaded', () => {
+            const track = document.querySelector(settings.footerTickerTrackSelector);
+            const items = [...track.children];
+            this.fillTicker(track, items);
+            window.addEventListener('resize', this.fillTicker);
+        });
     }
 };
 

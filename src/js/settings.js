@@ -16,4 +16,5 @@ export const settings = {
     productsNextSelector: '.products__nav--next',
     productCardSelector: '.product__card',
     filterInputSelector: 'input[name="filter"]',
+    footerTickerTrackSelector: '.footer-ticker__track',
 }
