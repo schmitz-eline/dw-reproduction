@@ -1071,6 +1071,11 @@ header {
     transform: rotate(15deg);
 }
 
+.footer-ticker:hover .footer-ticker__track {
+    animation-play-state: paused;
+}
+
+
 /* TABLET ///////////////////////////////////////////////////////////////////////// */
 
 @media (min-width: 680px) {
