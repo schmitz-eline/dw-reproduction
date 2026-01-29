@@ -1167,6 +1167,167 @@ header {
     transition: background .3s ease, color .3s ease;
 }
 
+/* footer section */
+
+.footer__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2.5rem 0;
+}
+
+.footer__text {
+    font-family: 'BricolageGrotesque', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 0.5em;
+    max-width: 400px;
+}
+
+.socials {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1.3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials__text {
+    font-family: 'FKScreamer', sans-serif;
+    font-weight: 800;
+    font-size: 2.3rem;
+    line-height: 1.4;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+}
+
+.socials__link--instagram {
+    width: 28px;
+}
+
+.socials__link--facebook {
+    width: 13px;
+}
+
+.socials__link:hover img {
+    transform: rotate(45deg);
+    transition: all 0.2s;
+}
+
+.footer__logos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.footer__image--logo {
+    width: 235px;
+}
+
+.footer__image--signature {
+    width: 196px;
+}
+
+.footer__infos {
+    margin-top: 3rem;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.footer__links a {
+    font-family: 'HelveticaNeueLTStd', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer__links a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.footer__info, .footer__address {
+    font-family: 'BricolageGrotesque', sans-serif;
+    font-weight: 100;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.footer__info {
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.footer__address {
+    line-height: 2.2;
+}
+
+.footer__info:hover, .footer__address:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.footer__github-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    margin-top: 2rem;
+}
+
+.github-link__text {
+    font-family: 'CaptainNelsonScript', cursive;
+    font-weight: 400;
+    font-size: 2.2rem;
+    position: relative;
+}
+
+.github-link__icon {
+    width: 50px;
+}
+
+.github-link__text:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 14px;
+    background-image: url("../../assets/svg/link-hover.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    margin-top: 4px;
+}
+
+.footer__github-link:hover .github-link__icon {
+    transform: rotateY(180deg);
+    transition: all 0.6s ease;
+}
+
+.footer__deco {
+    margin-top: 1.6rem;
+    background-image: url("../../assets/svg/deco-footer.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+    height: 32px;
+}
+
 
 /* TABLET ///////////////////////////////////////////////////////////////////////// */
 
@@ -1331,6 +1492,59 @@ header {
     .contact-cards {
         grid-template-rows: 1fr;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* footer section */
+    .footer__section {
+        padding: 5.5rem 4.05rem 0;
+    }
+
+    .footer__text {
+        font-size: 1.55rem;
+    }
+
+    .socials {
+        margin-top: 3rem;
+        gap: 1.65rem;
+    }
+
+    .socials__text {
+        font-size: 2.75rem;
+    }
+
+    .footer__logos {
+        margin-top: 5.5rem;
+        gap: 2.2rem;
+    }
+
+    .footer__infos {
+        margin-top: 5.5rem;
+    }
+
+    .footer__links {
+        gap: 1.2rem;
+        margin-bottom: 4.05rem;
+    }
+
+    .footer__links a {
+        font-size: 1.35rem;
+    }
+
+    .footer__info, .footer__address {
+        font-size: 1.35rem;
+    }
+
+    .footer__github-link {
+        gap: 1.65rem;
+        margin-top: 3rem;
+    }
+
+    .github-link__text {
+        font-size: 2.45rem;
+    }
+
+    .footer__deco {
+        margin-top: 2.2rem;
     }
 }
 
@@ -1568,5 +1782,58 @@ header {
 
     .contact-card__top, .contact-card__bottom {
         gap: 2.8rem;
+    }
+
+    /* footer section */
+    .footer__section {
+        padding: 8rem 5.6rem 0;
+    }
+
+    .footer__text {
+        font-size: 1.6rem;
+    }
+
+    .socials {
+        margin-top: 4rem;
+        gap: 2rem;
+    }
+
+    .socials__text {
+        font-size: 3.2rem;
+    }
+
+    .footer__logos {
+        margin-top: 8rem;
+        gap: 2.8rem;
+    }
+
+    .footer__infos {
+        margin-top: 8rem;
+    }
+
+    .footer__links {
+        gap: 1.4rem;
+        margin-bottom: 5.6rem;
+    }
+
+    .footer__links a {
+        font-size: 1.4rem;
+    }
+
+    .footer__info, .footer__address {
+        font-size: 1.4rem;
+    }
+
+    .footer__github-link {
+        gap: 2rem;
+        margin-top: 4rem;
+    }
+
+    .github-link__text {
+        font-size: 2.45rem;
+    }
+
+    .footer__deco {
+        margin-top: 2.8rem;
     }
 }
