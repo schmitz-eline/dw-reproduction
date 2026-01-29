@@ -1075,6 +1075,98 @@ header {
     animation-play-state: paused;
 }
 
+/* footer contact */
+
+.contact-cards {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2.5rem;
+    min-height: 50vh;
+    justify-content: space-between;
+}
+
+.contact-card--email {
+    background: var(--color-pink);
+}
+
+.contact-card--listen {
+    background: var(--color-dark-orange);
+}
+
+.contact__intro {
+    font-family: 'HelveticaNeueLTStd', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contact__title {
+    font-family: 'FKScreamer', sans-serif;
+    font-weight: 900;
+    font-size: 4.5rem;
+    line-height: 0.85;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contact__text {
+    font-family: 'BricolageGrotesque', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    max-width: 500px;
+}
+
+.contact__email {
+    font-family: 'BricolageGrotesque', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 18.5px;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid var(--color-black);
+    text-align: left;
+}
+
+.contact__cta, .contact__email.copied {
+    font-family: 'HelveticaNeueLTStd', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 17.5px;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    background: var(--color-black);
+    display: block;
+    width: fit-content;
+}
+
+.contact-card--email .contact__cta {
+    color: var(--color-pink);
+}
+
+.contact-card--listen .contact__cta {
+    color: var(--color-dark-orange);
+}
+
+.contact-card__top, .contact-card__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.contact__email.copied {
+    background: var(--color-black);
+    color: var(--color-pink);
+    transition: background .3s ease, color .3s ease;
+}
+
 
 /* TABLET ///////////////////////////////////////////////////////////////////////// */
 
@@ -1217,6 +1309,28 @@ header {
     /* footer ticker */
     .footer-ticker__link {
         padding: 12px 1.65rem 8px;
+    }
+
+    /* footer contact */
+    .contact__intro {
+        font-size: 1.35rem;
+    }
+
+    .contact__title {
+        font-size: 5.25rem;
+    }
+
+    .contact__text {
+        font-size: 1.55rem;
+    }
+
+    .contact-card__top, .contact-card__bottom {
+        gap: 2.2rem;
+    }
+
+    .contact-cards {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1433,5 +1547,26 @@ header {
     /* footer ticker */
     .footer-ticker__link {
         padding: 12px 2rem 8px;
+    }
+
+    /* footer contact */
+    .contact__intro {
+        font-size: 1.4rem;
+    }
+
+    .contact__title {
+        font-size: 6rem;
+    }
+
+    .contact__text {
+        font-size: 1.6rem;
+    }
+
+    .contact__email {
+        max-width: 50%;
+    }
+
+    .contact-card__top, .contact-card__bottom {
+        gap: 2.8rem;
     }
 }

@@ -17,4 +17,7 @@ export const settings = {
     productCardSelector: '.product__card',
     filterInputSelector: 'input[name="filter"]',
     footerTickerTrackSelector: '.footer-ticker__track',
+    emailButtonSelector: '.contact__email',
+    copiedClass: 'copied',
+    emailButtonText: 'Copié !',
 }

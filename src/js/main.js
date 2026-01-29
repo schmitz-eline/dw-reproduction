@@ -10,6 +10,7 @@ const reproduction = {
         this.addTickerNav();
         this.addProductsNav();
         this.manageFooterTickerScroll();
+        this.addToClipboard();
     },
 
     getHtmlElements() {
@@ -150,6 +151,22 @@ const reproduction = {
             const items = [...track.children];
             this.fillTicker(track, items);
             window.addEventListener('resize', this.fillTicker);
+        });
+    },
+
+    addToClipboard() {
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.querySelector(settings.emailButtonSelector);
+            button.addEventListener('click', () => {
+                navigator.clipboard.writeText(button.dataset.copy).then(() => {
+                    button.classList.add(settings.copiedClass);
+                    button.textContent = settings.emailButtonText;
+                    setTimeout(() => {
+                        button.classList.remove(settings.copiedClass);
+                        button.textContent = button.dataset.copy;
+                    }, 1500);
+                });
+            });
         });
     }
 };
