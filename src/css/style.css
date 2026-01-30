@@ -1335,73 +1335,6 @@ header {
     transform: rotateY(180deg);
 }
 
-/*
-
-.footer__infos {
-    margin-top: 3rem;
-}
-
-.footer__links {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 2.5rem;
-}
-
-.footer__info {
-    line-height: 1.4;
-    margin-bottom: 1rem;
-    cursor: pointer;
-}
-
-.footer__address {
-    line-height: 2.2;
-}
-
-.footer__info:hover, .footer__address:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
-}
-
-.footer__github-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.3rem;
-    margin-top: 2rem;
-}
-
-.github-link__text {
-    font-family: 'CaptainNelsonScript', cursive;
-    font-weight: 400;
-    font-size: 2.2rem;
-    position: relative;
-}
-
-.github-link__icon {
-    width: 50px;
-}
-
-.github-link__text:hover::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 14px;
-    background-image: url("../../assets/svg/deco-footer-link-hover.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    margin-top: 4px;
-}
-
-.footer__github-link:hover .github-link__icon {
-    transform: rotateY(180deg);
-    transition: all 0.6s ease;
-}*/
-
 .footer__deco {
     margin-top: 1.6rem;
     background-image: url("../../assets/svg/deco-footer.svg");
@@ -1410,7 +1343,6 @@ header {
     background-position: center;
     height: 32px;
 }
-
 
 /* TABLET ///////////////////////////////////////////////////////////////////////// */
 
@@ -1652,33 +1584,6 @@ header {
         gap: 1.65rem;
     }
 
-    /*
-
-    .footer__infos {
-        margin-top: 5.5rem;
-    }
-
-    .footer__links {
-        gap: 1.2rem;
-        margin-bottom: 4.05rem;
-    }
-
-    .footer__links a {
-        font-size: 1.35rem;
-    }
-
-    .footer__info, .footer__address {
-        font-size: 1.35rem;
-    }
-
-    .footer__github-link {
-        gap: 1.65rem;
-        margin-top: 3rem;
-    }
-
-    .github-link__text {
-        font-size: 2.45rem;
-    }*/
     .footer__deco {
         margin-top: 2.2rem;
     }
@@ -1974,33 +1879,6 @@ header {
         flex-direction: row;
     }
 
-    /*
-
-    .footer__infos {
-        margin-top: 8rem;
-    }
-
-    .footer__links {
-        gap: 1.4rem;
-        margin-bottom: 5.6rem;
-    }
-
-    .footer__links a {
-        font-size: 1.4rem;
-    }
-
-    .footer__info, .footer__address {
-        font-size: 1.4rem;
-    }
-
-    .footer__github-link {
-        gap: 2rem;
-        margin-top: 4rem;
-    }
-
-    .github-link__text {
-        font-size: 2.45rem;
-    }*/
     .footer__deco {
         margin-top: 2.8rem;
     }
