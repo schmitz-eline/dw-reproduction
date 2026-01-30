@@ -1712,6 +1712,10 @@ header {
         margin-bottom: 2.8rem;
     }
 
+    .hero__nav {
+        top: 50%;
+    }
+
     /* integration + about card */
     .integration__card--simple, .integration__face, .about__card {
         padding: 8rem 2.8rem;
