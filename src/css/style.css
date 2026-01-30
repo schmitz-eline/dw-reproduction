@@ -1354,6 +1354,16 @@ header {
         margin-bottom: -34px;
     }
 
+    .mobile-menu__nav {
+        font-size: 2rem;
+        margin-top: 4.3rem;
+        margin-bottom: 5.9rem;
+    }
+
+    .mobile-menu__nav .submenu-toggle::after {
+        width: 17px;
+    }
+
     /* hero */
     .hero__content {
         padding: 10.3rem 2.2rem;
