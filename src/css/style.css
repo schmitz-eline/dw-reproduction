@@ -54,7 +54,7 @@ header {
     position: relative;
     font-family: 'HelveticaNeueLTStd', sans-serif;
     text-transform: uppercase;
-    z-index: 1000;
+    z-index: 2000;
 }
 
 .home-logo {
