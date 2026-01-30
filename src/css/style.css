@@ -1383,6 +1383,10 @@ header {
     }
 
     /* integration + about card */
+    .integration, .about {
+        margin-top: 5.8rem;
+    }
+
     .integration__grid {
         display: grid;
         grid-template-rows: none;
@@ -1717,6 +1721,10 @@ header {
     }
 
     /* integration + about card */
+    .integration, .about {
+        margin-top: 8rem;
+    }
+
     .integration__card--simple, .integration__face, .about__card {
         padding: 8rem 2.8rem;
         gap: 4rem;
