@@ -1619,12 +1619,12 @@ header {
         display: flex;
         align-items: center;
         gap: 4.4rem;
+        position: relative;
     }
 
-    .desktop-nav .submenu-toggle {
+    .desktop-nav .nav-links > li {
         display: inline-flex;
         gap: 1rem;
-        position: relative;
         margin: 1rem 0;
     }
 
@@ -1635,7 +1635,7 @@ header {
         cursor: pointer;
     }
 
-    .desktop-nav .submenu-toggle::after {
+    .desktop-nav .nav-links > li::after {
         display: block;
         content: '';
         background-image: url("../../assets/svg/arrow-nav.svg");
@@ -1654,6 +1654,7 @@ header {
         flex-direction: column;
         gap: 1.2rem;
         position: absolute;
+        top: 100%;
         opacity: 0;
         visibility: hidden;
         transition-duration: 0.2s;
@@ -1672,7 +1673,7 @@ header {
         visibility: visible;
     }
 
-    .desktop-nav .submenu-toggle:hover::after {
+    .desktop-nav .nav-links > li:hover::after {
         transform: rotate(90deg);
         transition: transform 0.2s ease;
     }
